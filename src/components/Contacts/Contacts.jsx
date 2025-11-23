@@ -1,0 +1,313 @@
+"use client";
+import React, { useState } from 'react';
+import emailjs from "@emailjs/browser";
+import { Phone, MapPin, Building, Send } from 'lucide-react';
+const Contacts = () => {
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const [errorMessage, setErrorMessage] = useState("");
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        number: '',
+        message: ''
+    });
+
+    const [submitted, setSubmitted] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.name.value;
+        const subject = form.subject.value;
+        const email = form.email.value;
+        const number = form.number.value;
+        const message = form.message.value;
+
+        const data = {
+            name: name,
+            email: email,
+            subject: subject,
+            number: number,
+            message: message,
+        };
+
+        setFormData(data);
+
+        try {
+            const res = await emailjs.sendForm(serviceId, publicKey, form, templateId);
+            if (res.status == 200) {
+                setSubmitted(true);
+                form.reset();
+                setErrorMessage("");
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    number: '',
+                    message: ''
+                });
+            }
+        } catch (error) {
+            setErrorMessage(error.text);
+            console.log(error);
+        }
+    };
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const offices = [
+        {
+            icon: Building,
+            name: "Gazipur Office",
+            location: "Gazipur City",
+            address: "Holding 9564, Borobari Gacha Rastar Mor, Gazipur City.",
+            phone: "+880 1788-201488",
+            email: "info@securitybd.com"
+        },
+        {
+            icon: MapPin,
+            name: "Sirajganj Office",
+            location: "Sirajganj City",
+            address: "House- 1134, Gazipur Sadar, Gazipur City.",
+            phone: "+880 1985-801984",
+            email: "info@securitybd.com"
+        },
+        {
+            icon: Building,
+            name: "Chattogram Office",
+            location: "Chattogram City",
+            address: "2058B, Rangpura, Bank Colony, Chattogram.",
+            phone: "+880 1788-201488",
+            email: "info@securitybd.com"
+        },
+        {
+            icon: Building,
+            name: "Nilphamari Office",
+            location: "Nilphamari City",
+            address: "Holding -9805, Ward No. 7, Hospital Road, Jaldhakara.",
+            phone: "+880 1985-801488",
+            email: "info@securitybd.com"
+        }
+    ];
+    return (
+        <div className='bg-gray-50'>
+
+            <div className="relative h-64 bg-gray-800 overflow-hidden">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: 'url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80)',
+                    }}
+                >
+                    <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
+                </div>
+                <div className="relative h-full flex items-center justify-center">
+                    <h1 className="text-white text-4xl font-bold">Contacts</h1>
+                </div>
+            </div>
+
+            <div className='bg-linear-to-br from-blue-100 to-gray-50 lg:w-1/2 mx-auto p-10 text-center m-10'>
+                <h1 className='text-xl lg:text-3xl font-bold'>Get In Touch With SR Security</h1>
+                <p>We're here to provide reliable security and manpower solutions. Contact us today.</p>
+                <div className='border text-xs md:text-base border-primary mt-2 mx-6'></div>
+            </div>
+
+            <section>
+                <div className="py-16 px-4 container mx-auto">
+                    <div className=" mx-auto">
+
+                        <div className="bg-white rounded-2xl shadow-lg p-8 mb-12 border-2 border-blue-100 ">
+                            <div className="text-center max-w-2xl mx-auto">
+                                <div className="flex justify-center mb-4">
+                                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <Phone className="w-8 h-8 text-blue-600" />
+                                    </div>
+                                </div>
+                                <h2 className="text-3xl font-bold text-gray-800 mb-2">
+                                    Dhaka Head Office
+                                </h2>
+                                <p className="text-gray-500 text-sm mb-4">
+                                    Primary contacts for all Head Office and urgent inquiries.
+                                </p>
+                                <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                                    +880 1711-430179
+                                </h3>
+                                <p className="text-gray-500 text-sm mb-2">
+                                    +880 1985-801487, +880 1985-801481
+                                </p>
+                                <a href="mailto:info@securitybd.com" className="text-blue-600 hover:text-blue-700 text-sm">
+                                    info@securitybd.com
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div className="mb-16">
+                            <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+                                Our Regional Offices
+                            </h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                {offices.map((office, index) => {
+                                    const IconComponent = office.icon;
+                                    return (
+                                        <div
+                                            key={index}
+                                            className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6 border border-gray-100"
+                                        >
+                                            <div className="flex justify-center mb-4">
+                                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                                    <IconComponent className="w-6 h-6 text-blue-600" />
+                                                </div>
+                                            </div>
+                                            <h3 className="text-lg font-bold text-gray-800 text-center mb-1">
+                                                {office.name}
+                                            </h3>
+                                            <p className="text-blue-600 text-sm text-center mb-4">
+                                                {office.location}
+                                            </p>
+                                            <p className="text-gray-600 text-sm text-center mb-4 leading-relaxed">
+                                                {office.address}
+                                            </p>
+                                            <div className="text-center">
+                                                <p className="text-gray-700 text-sm font-semibold mb-1">
+                                                    Phone: {office.phone}
+                                                </p>
+                                                <a
+                                                    href={`mailto:${office.email}`}
+                                                    className="text-blue-600 hover:text-blue-700 text-sm"
+                                                >
+                                                    {office.email}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+
+
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl font-bold text-primary">
+                                Feel Free to Contact Us Today
+                            </h2>
+                        </div>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                            <div className="bg-white rounded-xl shadow-lg overflow-hidden ">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58398.86341087786!2d90.36311469999999!3d23.8103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70c15ea1de1%3A0x97856381e88ac842!2sDhaka!5e0!3m2!1sen!2sbd!4v1234567890"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+
+                            <div className="bg-white rounded-xl shadow-lg p-8">
+                                <div className="mb-6">
+                                    <h2 className="text-3xl font-bold text-gray-900 mb-3">
+                                        Send A Message
+                                    </h2>
+                                    <p className="text-gray-500 text-sm">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                                        eiusmod tempor incididunt labore dolore.
+                                    </p>
+                                </div>
+
+                                {submitted && (
+                                    <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                                        <p className="text-green-700 text-sm text-center">
+                                            Thank you! We recived your message successfully.
+                                        </p>
+                                    </div>
+                                )}
+
+                                {errorMessage && (
+                                    <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                                        <p className="text-red-700 text-sm text-center">
+                                            {errorMessage || "Something went wrong. Please try again."}
+                                        </p>
+                                    </div>
+                                )}
+
+                                <form onSubmit={handleSubmit} className="space-y-4">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Your Name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            required
+                                        />
+                                        <input
+                                            type="text"
+                                            name="subject"
+                                            placeholder="Subject"
+                                            value={formData.subject}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            required
+                                        />
+                                    </div>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Your Email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            required
+                                        />
+                                        <input
+                                            type="tel"
+                                            name="number"
+                                            placeholder="Your Phone"
+                                            value={formData.number}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            required
+                                        />
+                                    </div>
+                                    <textarea
+                                        name="message"
+                                        placeholder="Your Comment"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        rows="6"
+                                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        required
+                                    ></textarea>
+                                    <button
+                                        type="submit"
+                                        className="w-full bg-primary hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors hover:cursor-pointer"
+                                    >
+                                        <Send className="w-5 h-5" />
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    )
+}
+
+export default Contacts
