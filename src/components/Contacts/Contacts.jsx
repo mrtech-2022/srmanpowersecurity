@@ -41,7 +41,7 @@ const Contacts = () => {
         try {
             // Initialize emailjs with public key
             emailjs.init(publicKey);
-            
+
             const res = await emailjs.sendForm(serviceId, templateId, form);
             if (res.status === 200) {
                 setSubmitted(true);
@@ -129,7 +129,7 @@ const Contacts = () => {
             </div>
 
             <section>
-                <div className="py-16 px-4 container mx-auto">
+                <div className="py-16 px-4 container max-w-7xl mx-auto">
                     <div className="mx-auto">
 
                         <div className="bg-white rounded-2xl shadow-lg p-8 mb-12 border-2 border-blue-100">
@@ -210,11 +210,11 @@ const Contacts = () => {
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-                            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div className="bg-white rounded-xl shadow-lg overflow-hidden h-[400px] lg:h-full">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58398.86341087786!2d90.36311469999999!3d23.8103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70c15ea1de1%3A0x97856381e88ac842!2sDhaka!5e0!3m2!1sen!2sbd!4v1234567890"
                                     width="100%"
-                                    height="400"
+                                    height="100%"
                                     style={{ border: 0 }}
                                     allowFullScreen=""
                                     loading="lazy"
