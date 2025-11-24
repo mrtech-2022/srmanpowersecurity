@@ -41,7 +41,7 @@ export default function Services() {
     ];
 
     return (
-        <div className="bg-white py-16">
+        <div className="bg-white py-16 max-w-7xl mx-auto">
             <div className="container mx-auto px-4">
                 <h2 className="text-5xl font-bold text-primary text-center mb-12">Our Services</h2>
 
@@ -67,11 +67,11 @@ export default function Services() {
                     ))}
                 </div>
 
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center">
                     <button className="bg-primary text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-md hover:cursor-pointer">
                         View All
                     </button>
-                </div>
+                </div> */}
             </div>
         </div>
     );

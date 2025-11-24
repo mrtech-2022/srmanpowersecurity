@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import Marquee from 'react-fast-marquee';
 
 export default function Testimonial() {
     const testimonials = [
@@ -26,13 +27,28 @@ export default function Testimonial() {
             icon: "🏆",
             text: "Management and Squads were professional and caring. I definitely would recommend them close to anyone who has professional needs.",
             rating: 5
+        },
+        {
+            name: "Priya Desai",
+            role: "Manager",
+            avatar: "bg-pink-400",
+            icon: "👩",
+            text: "Exceptional service and dedication. The team went above and beyond to ensure our project was successful.",
+            rating: 5
+        },
+        {
+            name: "Vikram Patel",
+            role: "Director",
+            avatar: "bg-purple-500",
+            icon: "🎯",
+            text: "Professional approach and excellent results. Highly recommended for anyone looking for quality work.",
+            rating: 5
         }
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-white to-blue-50 py-16 px-4">
-            <div className="max-w-6xl mx-auto">
-
+        <div className="max-w-7xl mx-auto bg-white py-16 px-4">
+            <div className=" mx-auto">
                 <div className="text-center mb-16">
                     <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">
                         Testimonials
@@ -42,12 +58,11 @@ export default function Testimonial() {
                     </h2>
                 </div>
 
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <Marquee speed={50} gradient={false} pauseOnHover={true}>
                     {testimonials.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 mx-4 min-w-[350px] max-w-[350px]"
                         >
                             <div className="flex justify-center mb-6">
                                 <div className={`${testimonial.avatar} w-20 h-20 rounded-full flex items-center justify-center text-3xl shadow-md`}>
@@ -62,7 +77,7 @@ export default function Testimonial() {
                                 <p className="text-gray-500 text-sm">{testimonial.role}</p>
                             </div>
 
-                            <p className="text-gray-600 text-center mb-6 leading-relaxed">
+                            <p className="text-gray-600 text-center mb-6 leading-relaxed min-h-[120px]">
                                 {testimonial.text}
                             </p>
 
@@ -76,7 +91,7 @@ export default function Testimonial() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </Marquee>
             </div>
         </div>
     );
