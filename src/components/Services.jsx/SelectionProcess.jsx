@@ -4,8 +4,8 @@ import { Search, Filter, Users, Shield, FileText, GraduationCap, CheckCircle, Ar
 
 export default function SelectionProcess() {
     return (
-        <div className="bg-white py-16">
-            <div className="container mx-auto px-4">
+        <div className="bg-white py-16 max-w-7xl mx-auto">
+            <div className=" px-4">
                 <h2 className="text-4xl font-bold text-primary text-center mb-12">
                     Selection & Employment Process
                 </h2>

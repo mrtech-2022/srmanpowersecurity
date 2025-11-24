@@ -116,7 +116,7 @@ export default function Pricing() {
                 >
                     <div className="absolute inset-0 bg-black/60"></div>
                 </div>
-                <div className="relative h-full flex items-center">
+                <div className="relative h-full flex items-center text-center">
                     <div className="container mx-auto px-4">
                         <h1 className="text-white text-5xl font-bold uppercase">Affordable Prices</h1>
                     </div>
@@ -124,7 +124,7 @@ export default function Pricing() {
             </div>
 
 
-            <div className="container mx-auto px-4 py-16">
+            <div className="max-w-7xl mx-auto px-4 py-16">
                 <div className="text-center mb-12">
                     <div className="inline-block bg-yellow-200 px-6 py-2 rounded-full mb-4">
                         <span className="text-yellow-800 font-semibold">Our Service Pricing</span>
