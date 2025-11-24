@@ -26,20 +26,6 @@ export default function Projects() {
             image: 'https://images.unsplash.com/photo-1566140967404-b8b3932483f5?w=500&q=80',
             title: 'The 3 Best Cyber Security In The World Right Now',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
-        },
-        {
-            id: 4,
-            date: 'August 5, 2024',
-            image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&q=80',
-            title: 'Another Project Title',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
-        },
-        {
-            id: 5,
-            date: 'August 5, 2024',
-            image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=500&q=80',
-            title: 'Fifth Project Example',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
         }
     ];
 

@@ -7,13 +7,13 @@ export default function SecurityServicesHero() {
 
 
     const backgroundImages = [
-        '../../assets/home/hero_image/security.jpg',
+        '../../assets/home/hero_image/Security.jpg',
         '../../assets/home/hero_image/gunman.jpg',
         '../../assets/home/hero_image/Pratol.jpg',
         '../../assets/home/hero_image/Gurd.jpg',
         '../../assets/home/hero_image/Gurd2.jpg',
-        '../../assets/home/hero_image/manpower.jpg',
-        '../../assets/home/hero_image/manpower2.jpg',
+        '../../assets/home/hero_image/Manpower.jpg',
+        '../../assets/home/hero_image/Manpower2.jpg',
     ];
 
     const nextSlide = () => {

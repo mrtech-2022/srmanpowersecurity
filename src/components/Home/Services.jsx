@@ -17,7 +17,7 @@ export default function Services() {
         {
             id: 3,
             title: ' Facility Management Services',
-            image: '../../assets/home/service/facility.jpg',
+            image: '../../assets/home/service/Facility.jpg',
             alt: ' Facility Management Services'
         },
         {
