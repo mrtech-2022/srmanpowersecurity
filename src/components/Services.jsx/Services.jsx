@@ -39,7 +39,7 @@ export default function OurServices() {
         },
         {
             id: 3,
-            image: '../../assets/home/service/facility.jpg',
+            image: '../../assets/home/service/Facility.jpg',
             category: 'Facility Management Services',
             items: [
 
