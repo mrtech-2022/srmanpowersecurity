@@ -118,41 +118,41 @@ export default function WhyChooseUs() {
 
 
                 <div className="bg-primary py-12">
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
 
                         <div className="text-center text-white">
                             <div className="flex justify-center mb-3">
-                                <Smile className="w-12 h-12" strokeWidth={1.5} />
+                                <Smile className="w-8 sm:w-12 h-12" strokeWidth={1.5} />
                             </div>
-                            <div className="text-5xl font-bold mb-2">48+</div>
-                            <div className="text-lg font-semibold">Happy Clients</div>
+                            <div className="text-2xl sm:text-5xl font-bold mb-2">48+</div>
+                            <div className="sm:text-lg font-semibold">Happy Clients</div>
                         </div>
 
 
                         <div className="text-center text-white">
                             <div className="flex justify-center mb-3">
-                                <Users className="w-12 h-12" strokeWidth={1.5} />
+                                <Users className="w-8 sm:w-12 h-12" strokeWidth={1.5} />
                             </div>
-                            <div className="text-5xl font-bold mb-2">14+</div>
-                            <div className="text-lg font-semibold">Team Members</div>
+                            <div className="text-2xl sm:text-5xl font-bold mb-2">14+</div>
+                            <div className="sm:text-lg font-semibold">Team Members</div>
                         </div>
 
 
                         <div className="text-center text-white">
                             <div className="flex justify-center mb-3">
-                                <Briefcase className="w-12 h-12" strokeWidth={1.5} />
+                                <Briefcase className="w-8 sm:w-12 h-12" strokeWidth={1.5} />
                             </div>
-                            <div className="text-5xl font-bold mb-2">30+</div>
-                            <div className="text-lg font-semibold">Services Served</div>
+                            <div className="text-2xl sm:text-5xl font-bold mb-2">30+</div>
+                            <div className="sm:text-lg font-semibold">Services Served</div>
                         </div>
 
 
                         <div className="text-center text-white">
                             <div className="flex justify-center mb-3">
-                                <CheckCircle className="w-12 h-12" strokeWidth={1.5} />
+                                <CheckCircle className="w-8 sm:w-12 h-12" strokeWidth={1.5} />
                             </div>
-                            <div className="text-5xl font-bold mb-2">48+</div>
-                            <div className="text-lg font-semibold">Projects Completed</div>
+                            <div className="text-2xl sm:text-5xl font-bold mb-2">48+</div>
+                            <div className="sm:text-lg font-semibold">Projects Completed</div>
                         </div>
                     </div>
                 </div>

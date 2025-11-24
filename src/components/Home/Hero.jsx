@@ -59,7 +59,7 @@ export default function SecurityServicesHero() {
                     <div className="container mx-auto px-4">
                         <div className="text-center">
                             <p className="text-white text-lg mb-4 font-semibold">YOUR SAFETY, OUR EFFORT</p>
-                            <h2 className="text-white text-6xl font-bold mb-8 leading-tight">
+                            <h2 className="text-white text-3xl md:text-6xl font-bold mb-8 leading-tight">
                                 BEST MANPOWER & SECURITY SERVICE
                             </h2>
                             <button className="px-8 py-3 bg-primary text-white font-semibold hover:bg-blue-700 transition-colors">
@@ -83,13 +83,13 @@ export default function SecurityServicesHero() {
 
                 <button
                     onClick={prevSlide}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary/80 hover:bg-primary rounded-full flex items-center justify-center transition-colors z-10"
+                    className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary/80 hover:bg-primary rounded-full flex items-center justify-center transition-colors z-10"
                 >
                     <ChevronLeft className="w-6 h-6 text-white" />
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary/80 hover:bg-primary rounded-full flex items-center justify-center transition-colors z-10"
+                    className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary/80 hover:bg-primary rounded-full flex items-center justify-center transition-colors z-10"
                 >
                     <ChevronRight className="w-6 h-6 text-white" />
                 </button>
