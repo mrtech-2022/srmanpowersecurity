@@ -67,7 +67,7 @@ const Navbar = () => {
         <div>
             <header className={`bg-white backdrop-blur-sm fixed w-full top-0 z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'
                 }`}>
-                <div className="container mx-auto px-4 py-3">
+                <div className="container max-w-7xl mx-auto px-4 py-3">
                     <div className="flex items-center justify-between">
                         <LogoWithText />
 
@@ -119,15 +119,15 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <nav className="bg-primary hidden lg:block">
                     <div className="container mx-auto px-4">
-                        <ul className="flex items-center gap-1">
+                        <ul className="flex items-center justify-center gap-1">
                             {navLinks.map((link, index) => (
                                 <li key={index}>
                                     <Link
                                         href={link.href}
-                                        className="flex items-center gap-2 px-6 py-4 text-white hover:bg-blue-700 transition"
+                                        className="flex items-center border-r border-gray-400 gap-2 px-6 py-4 text-white hover:bg-blue-700 transition"
                                     >
                                         {link.icon && link.icon}
-                                        <span className="font-semibold">{link.label}</span>
+                                        <span className="font-bold">{link.label}</span>
                                     </Link>
                                 </li>
                             ))}

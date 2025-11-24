@@ -1,11 +1,12 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Youtube } from 'lucide-react';
 import LogoWithText from './LogoWithText';
+import Link from 'next/link';
 
 export default function Footer() {
     return (
         <footer className="bg-gray-900 text-gray-300 py-12">
-            <div className="container mx-auto px-4">
+            <div className="container max-w-7xl mx-auto px-4">
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                     {/* Company Info */}
                     <div>
@@ -48,26 +49,26 @@ export default function Footer() {
                     <div>
                         <h4 className="text-white font-bold text-lg mb-4">Quick Menu</h4>
                         <ul className="space-y-2">
-                            <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
+                            <Link href={'/'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
                                 <span>Home</span>
-                            </li>
-                            <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
+                            </Link>
+                            <Link href={'/about-us'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
                                 <span>About US</span>
-                            </li>
-                            <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
+                            </Link>
+                            <Link href={'/our-services'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
                                 <span>Our Service</span>
-                            </li>
-                            <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
+                            </Link>
+                            <Link href={'/pricing'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
                                 <span>Pricing</span>
-                            </li>
-                            <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
+                            </Link>
+                            <Link href={'/contacts'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
                                 <span>Contact Us</span>
-                            </li>
+                            </Link>
                         </ul>
                     </div>
 
