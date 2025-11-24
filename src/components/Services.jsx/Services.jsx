@@ -6,13 +6,11 @@ export default function OurServices() {
     const services = [
         {
             id: 1,
-            icon: Shield,
-            iconBg: 'bg-blue-200',
-            title: 'Security Personnel',
+            image: '../../assets/home/service/security.jpg',
             category: 'Security Services',
             items: [
                 'Armed & Unarmed Security Guards',
-                'Lady Security Trained to Charges (Retired Defense/Police Personnel)',
+                'Security Supervisors and In-Charges (Retired Defense/Police Personnel)',
                 'Executive Protection (VIP/Corporate)',
                 'Access Control & Monitoring',
                 'CCTV Surveillance & Electronic Security',
@@ -25,9 +23,7 @@ export default function OurServices() {
         },
         {
             id: 2,
-            icon: Users,
-            iconBg: 'bg-blue-200',
-            title: 'Construction Workers',
+            image: '../../assets/home/service/manpower.jpg',
             category: 'Manpower Supply Services',
             items: [
                 'General Labor & Helpers',
@@ -43,10 +39,21 @@ export default function OurServices() {
         },
         {
             id: 3,
-            icon: Wrench,
-            iconBg: 'bg-blue-200',
-            title: 'Heavy Equipment',
-            category: 'Industrial & Construction Manpower',
+            image: '../../assets/home/service/facility.jpg',
+            category: 'Facility Management Services',
+            items: [
+
+                'Office Cleaning & Housekeeping',
+                'Tea Boy / Poon / Messenger Services',
+                'Waste Management & Janitorial Support',
+                'Maintenance Support Staff',
+                'Building Assistance and Equipment Maintenance'
+            ]
+        },
+        {
+            id: 4,
+            image: '../../assets/home/service/SpecializedIndustrial&ConstructionManpower.jpg',
+            category: 'Specialized Industrial & Construction Manpower',
             items: [
                 'Mason, Carpenter, Steel Fixer, Pipe Fitter, Plumber',
                 'Rod Binder (4G, 6G, TIG, ARC)',
@@ -56,25 +63,9 @@ export default function OurServices() {
             ]
         },
         {
-            id: 4,
-            icon: Building,
-            iconBg: 'bg-blue-200',
-            title: 'Facility Management',
-            category: 'Clean Office Services',
-            items: [
-                'Office Cleaning & Housekeeping',
-                'Tea Boy / Poon / Messenger Services',
-                'Waste Management & Janitorial Support',
-                'Maintenance Support Staff',
-                'Building Assistance and Equipment Maintenance'
-            ]
-        },
-        {
             id: 5,
-            icon: GraduationCap,
-            iconBg: 'bg-blue-200',
-            title: 'Training & Recruitment',
-            category: 'Human Resource Services',
+            image: '../../assets/home/service/traning.jpg',
+            category: 'Training & Recruitment Services',
             items: [
                 'Recruitment of Verified and Qualified Personnel',
                 'Security & Safety Training Programs',
@@ -85,10 +76,8 @@ export default function OurServices() {
         },
         {
             id: 6,
-            icon: AlertTriangle,
-            iconBg: 'bg-blue-200',
-            title: 'Emergency Response',
-            category: 'Support Services',
+            image: '../../assets/home/service/aditional.jpg',
+            category: 'Additional & Support Services',
             items: [
                 'Rapid Deployment during Emergencies',
                 'Crisis Management & Disaster Response',
@@ -106,7 +95,7 @@ export default function OurServices() {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: 'url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80)',
+                        backgroundImage: 'url(/assets/images/service.jpg)',
                     }}
                 >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
@@ -137,12 +126,15 @@ export default function OurServices() {
                             >
 
                                 <div className={`${service.iconBg} p-8 text-center`}>
-                                    <div className="flex justify-center mb-4">
-                                        <IconComponent className="w-16 h-16 text-blue-700" strokeWidth={1.5} />
-                                    </div>
-                                    <h3 className="text-2xl font-bold text-blue-900">
-                                        {service.title}
-                                    </h3>
+                                    {IconComponent ? (
+                                        <IconComponent className="mx-auto w-12 h-12 text-blue-600" />
+                                    ) : (
+                                        <img
+                                            src={service.image}
+                                            alt={service.title}
+                                            className="mx-auto w-full max-h-40 object-cover rounded"
+                                        />
+                                    )}
                                 </div>
 
                                 <div className="p-6">

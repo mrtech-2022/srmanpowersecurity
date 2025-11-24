@@ -17,56 +17,56 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    {/* Our Services - Column 1 */}
+                    {/* Our Services - Column */}
                     <div>
                         <h4 className="text-white font-bold text-lg mb-4">Our Services</h4>
                         <ul className="space-y-2">
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Warehouse & Courier Service</span>
+                                <span>Security Services</span>
                             </li>
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Industrial Security Service</span>
+                                <span>*Manpower Supply Services</span>
                             </li>
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Hospital & Hotel Security</span>
+                                <span>Facility Management Services</span>
                             </li>
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Event Security</span>
+                                <span>Specialized Industrial & Construction Manpower</span>
                             </li>
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Airport Security</span>
+                                <span>Training & Recruitment Services</span>
                             </li>
                         </ul>
                     </div>
 
-                    {/* Our Services - Column 2 */}
+                    {/* Quick Menu - Column */}
                     <div>
-                        <h4 className="text-white font-bold text-lg mb-4">Our Services</h4>
+                        <h4 className="text-white font-bold text-lg mb-4">Quick Menu</h4>
                         <ul className="space-y-2">
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Residential & institution</span>
+                                <span>Home</span>
                             </li>
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Private Security</span>
+                                <span>About US</span>
                             </li>
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Escort Security</span>
+                                <span>Our Service</span>
                             </li>
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Emergency Response 24/7</span>
+                                <span>Pricing</span>
                             </li>
                             <li className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Patrolling Security</span>
+                                <span>Contact Us</span>
                             </li>
                         </ul>
                     </div>
@@ -82,17 +82,17 @@ export default function Footer() {
                             </li>
                             <li className="flex items-start gap-3 text-sm">
                                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                                <span>+012 345 67890</span>
+                                <span>+880 1898-801560</span>
                             </li>
                             <li className="flex items-start gap-3 text-sm">
                                 <Mail className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                                <span>info@example.com</span>
+                                <span>info@srsecuritybd.com</span>
                             </li>
                         </ul>
 
                         {/* Social Icons */}
                         <div className="flex gap-2 mt-4">
-                            <a href="#" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <a href="https://www.facebook.com/srsecuritybd" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                                 <Facebook className="w-4 h-4 text-white" />
                             </a>
                             <a href="#" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">

@@ -2,10 +2,11 @@
 import React, { useState } from 'react';
 import emailjs from "@emailjs/browser";
 import { Phone, MapPin, Building, Send } from 'lucide-react';
+
 const Contacts = () => {
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
     const [errorMessage, setErrorMessage] = useState("");
 
     const [formData, setFormData] = useState({
@@ -38,8 +39,11 @@ const Contacts = () => {
         setFormData(data);
 
         try {
-            const res = await emailjs.sendForm(serviceId, publicKey, form, templateId);
-            if (res.status == 200) {
+            // Initialize emailjs with public key
+            emailjs.init(publicKey);
+            
+            const res = await emailjs.sendForm(serviceId, templateId, form);
+            if (res.status === 200) {
                 setSubmitted(true);
                 form.reset();
                 setErrorMessage("");
@@ -50,9 +54,11 @@ const Contacts = () => {
                     number: '',
                     message: ''
                 });
+                // Auto-hide success message after 5 seconds
+                setTimeout(() => setSubmitted(false), 5000);
             }
         } catch (error) {
-            setErrorMessage(error.text);
+            setErrorMessage(error.text || "Failed to send message. Please try again.");
             console.log(error);
         }
     };
@@ -69,35 +75,36 @@ const Contacts = () => {
             icon: Building,
             name: "Gazipur Office",
             location: "Gazipur City",
-            address: "Holding 9564, Borobari Gacha Rastar Mor, Gazipur City.",
-            phone: "+880 1788-201488",
-            email: "info@securitybd.com"
+            address: "Holding 1062, Barabari Gacha Road, Kali Gachatala, Gazipur",
+            phone: "+880 1898-801566",
+            email: "info.gazipur@srsecuritybd.com"
         },
         {
             icon: MapPin,
             name: "Sirajganj Office",
             location: "Sirajganj City",
-            address: "House- 1134, Gazipur Sadar, Gazipur City.",
-            phone: "+880 1985-801984",
-            email: "info@securitybd.com"
+            address: "House: 11/A, Golakpur, Hatikumrul, Ullapara, Sirajganj",
+            phone: "+880 1898-801564",
+            email: "info.sirajganj@srsecuritybd.com"
         },
         {
             icon: Building,
             name: "Chattogram Office",
             location: "Chattogram City",
-            address: "2058B, Rangpura, Bank Colony, Chattogram.",
-            phone: "+880 1788-201488",
-            email: "info@securitybd.com"
+            address: "209/B, Rangipara, Bank Colony, North Agrabad, Chittagong",
+            phone: "+880 1898-801569",
+            email: "info.chattogram@srsecuritybd.com"
         },
         {
             icon: Building,
             name: "Nilphamari Office",
             location: "Nilphamari City",
-            address: "Holding -9805, Ward No. 7, Hospital Road, Jaldhakara.",
-            phone: "+880 1985-801488",
-            email: "info@securitybd.com"
+            address: "Holding: 1905, Ward No. 7, Hospital Road, Jummapara, Nilphamari",
+            phone: "+880 1898-801568",
+            email: "info.nilphamari@srsecuritybd.com"
         }
     ];
+
     return (
         <div className='bg-gray-50'>
 
@@ -105,7 +112,7 @@ const Contacts = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: 'url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80)',
+                        backgroundImage: 'url(/assets/images/concat.png)',
                     }}
                 >
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
@@ -115,17 +122,17 @@ const Contacts = () => {
                 </div>
             </div>
 
-            <div className='bg-linear-to-br from-blue-100 to-gray-50 lg:w-1/2 mx-auto p-10 text-center m-10'>
-                <h1 className='text-xl lg:text-3xl font-bold'>Get In Touch With SR Security</h1>
+            <div className='bg-gradient-to-br from-blue-100 to-gray-50 lg:w-1/2 mx-auto p-10 text-center m-10'>
+                <h1 className='text-xl lg:text-3xl font-bold'>Get In Touch With SR Manpower & Security Service Ltd.</h1>
                 <p>We're here to provide reliable security and manpower solutions. Contact us today.</p>
                 <div className='border text-xs md:text-base border-primary mt-2 mx-6'></div>
             </div>
 
             <section>
                 <div className="py-16 px-4 container mx-auto">
-                    <div className=" mx-auto">
+                    <div className="mx-auto">
 
-                        <div className="bg-white rounded-2xl shadow-lg p-8 mb-12 border-2 border-blue-100 ">
+                        <div className="bg-white rounded-2xl shadow-lg p-8 mb-12 border-2 border-blue-100">
                             <div className="text-center max-w-2xl mx-auto">
                                 <div className="flex justify-center mb-4">
                                     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
@@ -136,16 +143,16 @@ const Contacts = () => {
                                     Dhaka Head Office
                                 </h2>
                                 <p className="text-gray-500 text-sm mb-4">
-                                    Primary contacts for all Head Office and urgent inquiries.
+                                    House # 474, Road # 03, Solmaid, Dhali Bari, Vatara, Gulshan, Dhaka-1212
                                 </p>
                                 <h3 className="text-3xl font-bold text-gray-900 mb-2">
                                     +880 1711-430179
                                 </h3>
                                 <p className="text-gray-500 text-sm mb-2">
-                                    +880 1985-801487, +880 1985-801481
+                                    +880 1898-801560, +880 1985-801481
                                 </p>
-                                <a href="mailto:info@securitybd.com" className="text-blue-600 hover:text-blue-700 text-sm">
-                                    info@securitybd.com
+                                <a href="mailto:info@srsecuritybd.com" className="text-blue-600 hover:text-blue-700 text-sm">
+                                    info@srsecuritybd.com
                                 </a>
                             </div>
                         </div>
@@ -203,11 +210,11 @@ const Contacts = () => {
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-                            <div className="bg-white rounded-xl shadow-lg overflow-hidden ">
+                            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58398.86341087786!2d90.36311469999999!3d23.8103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70c15ea1de1%3A0x97856381e88ac842!2sDhaka!5e0!3m2!1sen!2sbd!4v1234567890"
                                     width="100%"
-                                    height="100%"
+                                    height="400"
                                     style={{ border: 0 }}
                                     allowFullScreen=""
                                     loading="lazy"
@@ -229,7 +236,7 @@ const Contacts = () => {
                                 {submitted && (
                                     <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
                                         <p className="text-green-700 text-sm text-center">
-                                            Thank you! We recived your message successfully.
+                                            Thank you! We received your message successfully.
                                         </p>
                                     </div>
                                 )}
@@ -294,7 +301,7 @@ const Contacts = () => {
                                     ></textarea>
                                     <button
                                         type="submit"
-                                        className="w-full bg-primary hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors hover:cursor-pointer"
+                                        className="w-full bg-blue-600 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors hover:cursor-pointer"
                                     >
                                         <Send className="w-5 h-5" />
                                         Send Message
@@ -307,7 +314,7 @@ const Contacts = () => {
             </section>
 
         </div>
-    )
-}
+    );
+};
 
-export default Contacts
+export default Contacts;

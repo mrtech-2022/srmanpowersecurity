@@ -1,64 +1,292 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import samsaraLogo from '../../../public/assets/images/samsara.png';
-import sngLogo from '../../../public/assets/images/sng.png';
-import spigenLogo from '../../../public/assets/images/spigen.png';
-import supertechLogo from '../../../public/assets/images/supertech.png';
-import premierLogo from '../../../public/assets/images/premier.png';
-import purvanchalLogo from '../../../public/assets/images/purvanchal.png';
-import sargodhaLogo from '../../../public/assets/images/sargodha.png';
+import AshuliaElevatedExpressway from '../../../public/assets/home/our_client_logo/AshuliaElevatedExpressway.jpg';
+import CGCBaseCamp from '../../../public/assets/home/our_client_logo/CGCBaseCamp.png';
+import ChinaGeoEngineeringCorporation from '../../../public/assets/home/our_client_logo/ChinaGeoEngineeringCorporation.jpg';
+import ChinaHarbourEngineeringCompany from '../../../public/assets/home/our_client_logo/ChinaHarbourEngineeringCompany.png';
+import ChinaMachineryEngineeringcorporation from '../../../public/assets/home/our_client_logo/ChinaMachineryEngineeringcorporation.jpg';
+import ChinaMajorBridgeEngineeringCoLtd from '../../../public/assets/home/our_client_logo/ChinaMajorBridgeEngineeringCoLtd.jpg';
+import CRBG from '../../../public/assets/home/our_client_logo/CRBG.png';
+import CRCE from '../../../public/assets/home/our_client_logo/CREC.jpg';
+import CSCEC7 from '../../../public/assets/home/our_client_logo/CSCEC7.png';
+import HuitongInternationalConstructionInstallationEngineering from '../../../public/assets/home/our_client_logo/HuitongInternationalConstruction&InstallationEngineering.jpg';
+import HydroChinaPowerChina from '../../../public/assets/home/our_client_logo/HydroChina&PowerChina.png';
+import ItalianThaiDevelopmentPCL from '../../../public/assets/home/our_client_logo/ItalianThaiDevelopmentPCL.jpg';
+import SinohydroCorporationLimited from '../../../public/assets/home/our_client_logo/SinohydroCorporationLimited.png';
+import ZhongnanEngineeringCorporationLimited from '../../../public/assets/home/our_client_logo/ZhongnanEngineeringCorporationLimited.jpg';
+
+import ARCorporation from '../../../public/assets/home/our_client_logo/Local/ARCorporation.png';
+import BengalEngineering from '../../../public/assets/home/our_client_logo/Local/BengalEngineering&Services.jpg';
+import BismillahConstructionLtd from '../../../public/assets/home/our_client_logo/Local/BismillahConstructionLtd.png';
+import BMTradingCorporationCRBGProject from '../../../public/assets/home/our_client_logo/Local/BMTradingCorporationCRBGProject.png';
+import BongobondhuHiTechCityProject from '../../../public/assets/home/our_client_logo/Local/BongobondhuHiTechCityProject.png';
+import CDL from '../../../public/assets/home/our_client_logo/Local/CDL.png';
+import DRSEngineeringconstruction from '../../../public/assets/home/our_client_logo/Local/DRSEngineeringconstruction.png';
+import GreenDynastyLimited from '../../../public/assets/home/our_client_logo/Local/GreenDynastyLimited.jpg';
+import JahidConstructionLtd from '../../../public/assets/home/our_client_logo/Local/JahidConstructionLtd.jpg';
+import JCXsaminaHouse from '../../../public/assets/home/our_client_logo/Local/JCXsaminaHouse.png';
+import JonotaConstructionLtd from '../../../public/assets/home/our_client_logo/Local/JonotaConstructionLtd.jpg';
+import KhanEnterprise from '../../../public/assets/home/our_client_logo/Local/KhanEnterprise.jpg';
+import LotafaEnterprise from '../../../public/assets/home/our_client_logo/Local/LotafaEnterprise.png';
+import MetalIndustriesLtd from '../../../public/assets/home/our_client_logo/Local/MSMetalIndustriesLtd.png';
+import MamunConstructionLtd from '../../../public/assets/home/our_client_logo/Local/MamunConstructionLtd.png';
+import MostofaConstructionLtd from '../../../public/assets/home/our_client_logo/Local/MostofaConstructionLtd.jpg';
+import MS_SafaConstruction from '../../../public/assets/home/our_client_logo/Local/MS_SafaConstruction.jpg';
+import NadiaSadiaConstruction from '../../../public/assets/home/our_client_logo/Local/NadiaSadiaConstruction.jpg';
+import NorthWestEngineering from '../../../public/assets/home/our_client_logo/Local/NorthWestEngineering.png';
+import SMConstruction from '../../../public/assets/home/our_client_logo/Local/SMConstruction.png';
+import THBEngineering from '../../../public/assets/home/our_client_logo/Local/THBEngineering&constructionLTD.png';
+import XLEngineering from '../../../public/assets/home/our_client_logo/Local/XLEngineering.png';
+import ZihadConstruction from '../../../public/assets/home/our_client_logo/Local/ZihadConstruction.jpg';
 import Image from 'next/image';
 
 export default function OurClients() {
     const clients = [
         {
             id: 1,
-            name: 'Samsara',
-            logo: samsaraLogo,
-            alt: 'Samsara logo'
+            name: 'AshuliaElevatedExpressway',
+            logo: AshuliaElevatedExpressway,
+            alt: 'AshuliaElevatedExpressway logo'
         },
         {
             id: 2,
-            name: 'SNG',
-            logo: sngLogo,
-            alt: 'SNG logo'
+            name: 'CGCBaseCamp',
+            logo: CGCBaseCamp,
+            alt: 'CGCBaseCamp logo'
         },
         {
             id: 3,
-            name: 'Spigen',
-            logo: spigenLogo,
-            alt: 'Spigen logo'
+            name: 'ChinaGeoEngineeringCorporation',
+            logo: ChinaGeoEngineeringCorporation,
+            alt: 'ChinaGeoEngineeringCorporation logo'
         },
         {
             id: 4,
-            name: 'Supertech',
-            logo: supertechLogo,
-            alt: 'Supertech logo'
+            name: 'ChinaHarbourEngineeringCompany',
+            logo: ChinaHarbourEngineeringCompany,
+            alt: 'ChinaHarbourEngineeringCompany logo'
         },
         {
             id: 5,
-            name: 'Premier',
-            logo: premierLogo,
-            alt: 'Premier logo'
+            name: 'ChinaMachineryEngineeringcorporation',
+            logo: ChinaMachineryEngineeringcorporation,
+            alt: 'ChinaMachineryEngineeringcorporation logo'
         },
         {
             id: 6,
-            name: 'Purvanchal',
-            logo: purvanchalLogo,
-            alt: 'Purvanchal logo'
+            name: 'ChinaMajorBridgeEngineeringCoLtd',
+            logo: ChinaMajorBridgeEngineeringCoLtd,
+            alt: 'ChinaMajorBridgeEngineeringCoLtd logo'
         },
         {
             id: 7,
-            name: 'Sargodha',
-            logo: sargodhaLogo,
-            alt: 'Sargodha logo'
+            name: 'CRBG',
+            logo: CRBG,
+            alt: 'CRBG logo'
+        },
+        {
+            id: 8,
+            name: 'CRCE',
+            logo: CRCE,
+            alt: 'CRCE logo'
+        },
+        {
+            id: 9,
+            name: 'CSCEC7',
+            logo: CSCEC7,
+            alt: 'CSCEC7 logo'
+        },
+        {
+            id: 10,
+            name: 'HuitongInternationalConstructionInstallationEngineering',
+            logo: HuitongInternationalConstructionInstallationEngineering,
+            alt: 'HuitongInternationalConstruction&InstallationEngineering logo'
+        },
+        {
+            id: 11,
+            name: 'HydroChinaPowerChina',
+            logo: HydroChinaPowerChina,
+            alt: 'HydroChina&PowerChina logo'
+        },
+        {
+            id: 12,
+            name: 'ItalianThaiDevelopmentPCL',
+            logo: ItalianThaiDevelopmentPCL,
+            alt: 'ItalianThaiDevelopmentPCL logo'
+        },
+        {
+            id: 13,
+            name: 'SinohydroCorporationLimited',
+            logo: SinohydroCorporationLimited,
+            alt: 'SinohydroCorporationLimited logo'
+        },
+        {
+            id: 14,
+            name: 'ZhongnanEngineeringCorporationLimited',
+            logo: ZhongnanEngineeringCorporationLimited,
+            alt: 'ZhongnanEngineeringCorporationLimited logo'
+        },
+
+        {
+            id: 15,
+            name: 'ZihadConstruction',
+            logo: ZihadConstruction,
+            alt: 'ZihadConstruction logo'
+        },
+
+        {
+            id: 16,
+            name: 'XLEngineering',
+            logo: XLEngineering,
+            alt: 'XLEngineering logo'
+        },
+
+        {
+            id: 17,
+            name: 'THBEngineering',
+            logo: THBEngineering,
+            alt: 'THBEngineering logo'
+        },
+
+        {
+            id: 18,
+            name: 'SMConstruction',
+            logo: SMConstruction,
+            alt: 'SMConstruction logo'
+        },
+
+        {
+            id: 19,
+            name: 'NorthWestEngineering',
+            logo: NorthWestEngineering,
+            alt: 'NorthWestEngineering logo'
+        },
+
+        {
+            id: 20,
+            name: 'NadiaSadiaConstruction',
+            logo: NadiaSadiaConstruction,
+            alt: 'NadiaSadiaConstruction logo'
+        },
+
+        {
+            id: 21,
+            name: 'MS_SafaConstruction',
+            logo: MS_SafaConstruction,
+            alt: 'MS_SafaConstruction logo'
+        },
+
+        {
+            id: 22,
+            name: 'MostofaConstructionLtd',
+            logo: MostofaConstructionLtd,
+            alt: 'MostofaConstructionLtd logo'
+        },
+
+        {
+            id: 23,
+            name: 'MetalIndustriesLtd',
+            logo: MetalIndustriesLtd,
+            alt: 'MetalIndustriesLtd logo'
+        },
+
+        {
+            id: 24,
+            name: 'LotafaEnterprise',
+            logo: LotafaEnterprise,
+            alt: 'LotafaEnterprise logo'
+        },
+
+        {
+            id: 25,
+            name: 'KhanEnterprise',
+            logo: KhanEnterprise,
+            alt: 'KhanEnterprise logo'
+        },
+
+        {
+            id: 26,
+            name: 'JonotaConstructionLtd',
+            logo: JonotaConstructionLtd,
+            alt: 'JonotaConstructionLtd logo'
+        },
+
+        {
+            id: 27,
+            name: 'JCXsaminaHouse',
+            logo: JCXsaminaHouse,
+            alt: 'JCXsaminaHouse logo'
+        },
+
+        {
+            id: 28,
+            name: 'JahidConstructionLtd',
+            logo: JahidConstructionLtd,
+            alt: 'JahidConstructionLtd logo'
+        },
+
+        {
+            id: 29,
+            name: 'GreenDynastyLimited',
+            logo: GreenDynastyLimited,
+            alt: 'GreenDynastyLimited logo'
+        },
+
+        {
+            id: 30,
+            name: 'DRSEngineeringconstruction',
+            logo: DRSEngineeringconstruction,
+            alt: 'DRSEngineeringconstruction logo'
+        },
+
+        {
+            id: 31,
+            name: 'CDL',
+            logo: CDL,
+            alt: 'CDL logo'
+        },
+
+        {
+            id: 32,
+            name: 'BongobondhuHiTechCityProject',
+            logo: BongobondhuHiTechCityProject,
+            alt: 'BongobondhuHiTechCityProject logo'
+        },
+
+        {
+            id: 33,
+            name: 'BMTradingCorporationCRBGProject',
+            logo: BMTradingCorporationCRBGProject,
+            alt: 'BMTradingCorporationCRBGProject logo'
+        },
+
+        {
+            id: 34,
+            name: 'BismillahConstructionLtd',
+            logo: BismillahConstructionLtd,
+            alt: 'BismillahConstructionLtd logo'
+        },
+
+        {
+            id: 35,
+            name: 'BengalEngineering',
+            logo: BengalEngineering,
+            alt: 'BengalEngineering logo'
+        },
+
+        {
+            id: 36,
+            name: 'ARCorporation',
+            logo: ARCorporation,
+            alt: 'ARCorporation logo'
         }
+
     ];
 
     const clientsWithButton = [
         ...clients,
         {
-            id: 8,
+            id: 999, // use a unique id to avoid duplicates
             name: 'View More',
             isButton: true
         }
@@ -68,11 +296,11 @@ export default function OurClients() {
         <div className="bg-white py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 text-center mb-8 lg:mb-12">
-                    Our Valued Client's
+                    Our Valued Clients
                 </h2>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-                    {clientsWithButton.map((client, index) => (
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {clientsWithButton.map((client) => (
                         <div
                             key={client.id}
                             className="bg-gray-50 border border-gray-200 flex items-center justify-center p-4 sm:p-6 lg:p-8 hover:shadow-lg transition-all duration-300 min-h-[120px]"
@@ -101,8 +329,8 @@ export default function OurClients() {
                     Client's Reference Letter
                 </h2>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    {clientsWithButton.map((client, index) => (
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {clientsWithButton.map((client) => (
                         <div
                             key={client.id}
                             className="bg-gray-50 border border-gray-200 flex items-center justify-center p-4 sm:p-6 lg:p-8 hover:shadow-lg transition-all duration-300 min-h-[120px]"

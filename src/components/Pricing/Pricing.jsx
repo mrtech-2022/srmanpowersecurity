@@ -111,7 +111,7 @@ export default function Pricing() {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: 'url(https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80)',
+                        backgroundImage: 'url(/assets/images/pricing.jpg)',
                     }}
                 >
                     <div className="absolute inset-0 bg-black/60"></div>

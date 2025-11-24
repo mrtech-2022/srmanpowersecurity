@@ -78,15 +78,15 @@ const Navbar = () => {
                                     <Phone className="w-4 h-4 text-red-500" />
                                     <div>
                                         <p className="text-xs text-gray-400">HOTLINE</p>
-                                        <p className="text-sm text-primary font-semibold">+8801944474444</p>
-                                        <p className="text-sm text-primary font-semibold">+8801944464444</p>
+                                        <p className="text-sm text-primary font-semibold">+880 1898-801560</p>
+                                        <p className="text-sm text-primary font-semibold">+880 1898-801561</p>
                                     </div>
                                 </div>
                             </div>
 
 
                             <div className="flex gap-2">
-                                <a href="#" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <a href="https://www.facebook.com/srsecuritybd" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition">
                                     <Facebook className="w-4 h-4 text-white" />
                                 </a>
                                 <a href="#" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-800 transition">

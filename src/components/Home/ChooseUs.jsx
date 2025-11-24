@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
                                 <div className="bg-gray-100">
 
                                     <img
-                                        src="https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&q=80"
+                                        src="../../assets/home/why_choose_us/stand.jpg"
                                         alt="Security monitoring"
                                         className="w-[400px] h-[200px] object-cover rounded-tl-[40%] rounded-xl "
                                     />
@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
 
                             <div className='flex items-end'>
                                 <div className=" bg-primary rounded-xl  rounded-tr-[60%] px-8 py-6 text-white text-center shadow-xl w-fit h-fit">
-                                    <div className="text-5xl font-bold mb-2">12+</div>
+                                    <div className="text-5xl font-bold mb-2">6+</div>
                                     <div className="text-sm font-semibold">Year Experience</div>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
                                 <div className="">
 
                                     <img
-                                        src="https://images.unsplash.com/photo-1590642916589-592bca10dfbf?w=500&q=80"
+                                        src="../../assets/home/why_choose_us/stand2.jpg"
                                         alt="Security service"
                                         className="w-[450px] h-[200px] object-cover rounded-br-[110px] rounded-xl"
                                     />
@@ -124,7 +124,7 @@ export default function WhyChooseUs() {
                             <div className="flex justify-center mb-3">
                                 <Smile className="w-12 h-12" strokeWidth={1.5} />
                             </div>
-                            <div className="text-5xl font-bold mb-2">200+</div>
+                            <div className="text-5xl font-bold mb-2">48+</div>
                             <div className="text-lg font-semibold">Happy Clients</div>
                         </div>
 
@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
                             <div className="flex justify-center mb-3">
                                 <Users className="w-12 h-12" strokeWidth={1.5} />
                             </div>
-                            <div className="text-5xl font-bold mb-2">30+</div>
+                            <div className="text-5xl font-bold mb-2">14+</div>
                             <div className="text-lg font-semibold">Team Members</div>
                         </div>
 
@@ -142,7 +142,7 @@ export default function WhyChooseUs() {
                             <div className="flex justify-center mb-3">
                                 <Briefcase className="w-12 h-12" strokeWidth={1.5} />
                             </div>
-                            <div className="text-5xl font-bold mb-2">20+</div>
+                            <div className="text-5xl font-bold mb-2">30+</div>
                             <div className="text-lg font-semibold">Services Served</div>
                         </div>
 
@@ -151,7 +151,7 @@ export default function WhyChooseUs() {
                             <div className="flex justify-center mb-3">
                                 <CheckCircle className="w-12 h-12" strokeWidth={1.5} />
                             </div>
-                            <div className="text-5xl font-bold mb-2">150+</div>
+                            <div className="text-5xl font-bold mb-2">48+</div>
                             <div className="text-lg font-semibold">Projects Completed</div>
                         </div>
                     </div>

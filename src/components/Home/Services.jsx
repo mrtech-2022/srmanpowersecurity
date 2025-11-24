@@ -4,39 +4,39 @@ export default function Services() {
     const services = [
         {
             id: 1,
-            title: 'Bathtub Installation & Repairing',
-            image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&q=80',
-            alt: 'Bathtub installation'
+            title: ' Security Services',
+            image: '../../assets/home/service/security.jpg',
+            alt: ' Security Services'
         },
         {
             id: 2,
-            title: 'Commercial Office Painting Service',
-            image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=500&q=80',
-            alt: 'Office painting'
+            title: ' Manpower Supply Services',
+            image: '../../assets/home/service/manpower.jpg',
+            alt: ' Manpower Supply Services'
         },
         {
             id: 3,
-            title: 'Custom Furniture Crafting',
-            image: 'https://images.unsplash.com/photo-1661446600373-125cfeadf275?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            alt: 'Furniture crafting'
+            title: ' Facility Management Services',
+            image: '../../assets/home/service/facility.jpg',
+            alt: ' Facility Management Services'
         },
         {
             id: 4,
-            title: 'House Painting Service',
-            image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=500&q=80',
-            alt: 'House painting'
+            title: ' Specialized Industrial & Construction Manpower',
+            image: '../../assets/home/service/SpecializedIndustrial&ConstructionManpower.jpg',
+            alt: ' Specialized Industrial & Construction Manpower'
         },
         {
             id: 5,
-            title: 'Landscaping Service',
-            image: 'https://images.unsplash.com/photo-1558904541-efa843a96f01?w=500&q=80',
-            alt: 'Landscaping'
+            title: 'Training & Recruitment Services',
+            image: '../../assets/home/service/traning.jpg',
+            alt: 'Training & Recruitment Services'
         },
         {
             id: 6,
-            title: 'Plumbing Solutions',
-            image: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=500&q=80',
-            alt: 'Plumbing service'
+            title: 'Additional & Support Services',
+            image: '../../assets/home/service/aditional.jpg',
+            alt: 'Additional & Support Services'
         }
     ];
 
@@ -59,7 +59,7 @@ export default function Services() {
                                 />
                             </div>
                             <div className="p-6 bg-white">
-                                <h3 className="text-xl font-bold text-orange-500 group-hover:text-orange-600 transition-colors">
+                                <h3 className="text-xl font-bold text-blue-500 group-hover:text-orange-600 transition-colors">
                                     {service.title}
                                 </h3>
                             </div>

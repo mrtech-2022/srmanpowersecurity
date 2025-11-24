@@ -7,10 +7,13 @@ export default function SecurityServicesHero() {
 
 
     const backgroundImages = [
-        'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&q=80',
-        'https://images.unsplash.com/photo-1571283056653-e9802feac258?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1485230405346-71acb9518d9c?q=80&w=1194&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=1920&q=80'
+        '../../assets/home/hero_image/security.jpg',
+        '../../assets/home/hero_image/gunman.jpg',
+        '../../assets/home/hero_image/Pratol.jpg',
+        '../../assets/home/hero_image/Gurd.jpg',
+        '../../assets/home/hero_image/Gurd2.jpg',
+        '../../assets/home/hero_image/manpower.jpg',
+        '../../assets/home/hero_image/manpower2.jpg',
     ];
 
     const nextSlide = () => {
