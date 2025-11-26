@@ -80,9 +80,9 @@ const Navbar = () => {
                                         <p className="text-xs text-primary font-semibold">HOTLINE</p>
                                         <p className="text-sm text-gray-400">Number</p>
                                     </div>
-                                    <div>
-                                        <p className="text-sm text-primary font-semibold">+880 1898-801560</p>
-                                        <p className="text-sm text-primary font-semibold">+880 1898-801561</p>
+                                    <div className='flex flex-col'>
+                                        <a href="tel:+8801898801560" className="text-sm text-primary font-semibold">+8801898801560</a>
+                                        <a href="tel:+8801898801561" className="text-sm text-primary font-semibold">+8801898801561</a>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
                                 <a href="#" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition">
                                     <Youtube className="w-4 h-4 text-white" />
                                 </a>
-                                <a href="#" className="w-9 h-9 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition">
+                                <a href="tel:+8801898801561" className="w-9 h-9 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition">
                                     <Phone className="w-4 h-4 text-white" />
                                 </a>
                             </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="bg-primary max-w-[1250px] mx-auto px-5 hidden lg:block">
+                <nav className="bg-primary mx-auto px-5 hidden lg:block">
                     <div className="container mx-auto px-2 ">
                         <ul className="flex items-center justify-center gap-1">
                             {navLinks.map((link, index) => (
@@ -165,8 +165,10 @@ const Navbar = () => {
                             <Phone className="w-4 h-4 text-red-500" />
                             <div>
                                 <p className="text-xs text-gray-500">HOTLINE</p>
-                                <p className="text-sm text-primary font-semibold">+8801944474444</p>
-                                <p className="text-sm text-primary font-semibold">+8801944464444</p>
+                                <div className='flex flex-col'>
+                                    <a href="tel:+8801898801560" className="text-sm text-primary font-semibold">+8801898801560</a>
+                                    <a href="tel:+8801898801561" className="text-sm text-primary font-semibold">+8801898801561</a>
+                                </div>
                             </div>
                         </div>
 
@@ -180,7 +182,7 @@ const Navbar = () => {
                             <a href="#" className="w-8 h-8 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition">
                                 <Youtube className="w-3 h-3 text-white" />
                             </a>
-                            <a href="#" className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition">
+                            <a href="tel:+8801898801561" className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition">
                                 <Phone className="w-3 h-3 text-white" />
                             </a>
                         </div>

@@ -81,10 +81,10 @@ export default function Footer() {
                                 <span>House # 474, Road # 03, Solmaid, Dhali Bari,
                                     Vatara, Gulshan, Dhaka-1212</span>
                             </li>
-                            <li className="flex items-start gap-3 text-sm">
+                            <a href='tel:+8801898801560' className="flex items-start gap-3 text-sm">
                                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                                 <span>+880 1898-801560</span>
-                            </li>
+                            </a>
                             <li className="flex items-start gap-3 text-sm">
                                 <Mail className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                                 <span>info@srsecuritybd.com</span>
@@ -112,7 +112,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-700 pt-6">
                     <div className="text-center text-sm text-gray-400">
-                        © 2024, All Rights Reserved. Designed & Develop by{' '}
+                        © 2025, All Rights Reserved. Designed & Develop by{' '}
                         <a href='https://mrtech.com.bd/' target='_blank' className="text-blue-500 hover:text-blue-400 transition-colors cursor-pointer">
                             MR Tech
                         </a>

@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sr Manpower & Security Services",
+  title: "SR Manpower & Security Services",
   description: "Providing top-notch security and manpower services",
 };
 

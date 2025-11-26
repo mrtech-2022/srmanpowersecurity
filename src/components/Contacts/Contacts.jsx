@@ -123,7 +123,7 @@ const Contacts = () => {
             </div>
 
             <div className='bg-gradient-to-br from-blue-100 to-gray-50 lg:w-1/2 mx-auto p-10 text-center m-10'>
-                <h1 className='text-xl lg:text-3xl font-bold'>Get In Touch With <br/> SR Manpower & Security Service Ltd.</h1>
+                <h1 className='text-xl lg:text-3xl font-bold'>Get In Touch With <br /> SR Manpower & Security Service Ltd.</h1>
                 <p>We're here to provide reliable security and manpower solutions. Contact us today.</p>
                 <div className='border text-xs md:text-base border-primary mt-2 mx-6'></div>
             </div>
@@ -145,9 +145,9 @@ const Contacts = () => {
                                 <p className="text-gray-500 text-sm mb-4">
                                     House # 474, Road # 03, Solmaid, Dhali Bari, Vatara, Gulshan, Dhaka-1212
                                 </p>
-                                <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                                <a href='tel:+8801711430179' className="text-xl md:text-3xl font-bold text-gray-900 mb-2">
                                     +880 1711-430179
-                                </h3>
+                                </a>
                                 <p className="text-gray-500 text-sm mb-2">
                                     +880 1898-801560, +880 1985-801481
                                 </p>
