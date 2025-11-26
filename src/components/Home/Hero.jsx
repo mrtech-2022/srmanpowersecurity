@@ -36,8 +36,7 @@ export default function SecurityServicesHero() {
 
     return (
         <div className="bg-gray-900">
-
-            <div className="h-[calc(100vh-12vh)] relative overflow-hidden mx-auto justify-center items-center flex">
+            <div className="h-[calc(100vh-6vh)] lg:h-[calc(100vh-12vh)] relative overflow-hidden mx-auto justify-center items-center flex">
 
                 <div className="absolute inset-0">
                     {backgroundImages.map((image, index) => (
