@@ -53,11 +53,11 @@ export default function Footer() {
                                 <span className="text-blue-500 mt-1">›</span>
                                 <span>Home</span>
                             </Link>
-                            <Link href={'/about-us'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
+                            <Link href={'/about'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
                                 <span>About US</span>
                             </Link>
-                            <Link href={'/our-services'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
+                            <Link href={'/services'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
                                 <span>Our Service</span>
                             </Link>

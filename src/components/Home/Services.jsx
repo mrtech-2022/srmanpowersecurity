@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Services() {
@@ -67,11 +68,11 @@ export default function Services() {
                     ))}
                 </div>
 
-                {/* <div className="flex justify-center">
-                    <button className="bg-primary text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-md hover:cursor-pointer">
+                <div className="flex justify-center">
+                    <Link href={'/services'} className="bg-primary text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-md hover:cursor-pointer">
                         View All
-                    </button>
-                </div> */}
+                    </Link>
+                </div>
             </div>
         </div>
     );

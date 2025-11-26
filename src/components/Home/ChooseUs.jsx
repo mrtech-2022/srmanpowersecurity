@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Award, Headphones, Users, Smile, UserCheck, Briefcase, CheckCircle } from 'lucide-react';
+import Link from 'next/link';
 
 export default function WhyChooseUs() {
     return (
@@ -110,9 +111,9 @@ export default function WhyChooseUs() {
                         </div>
 
 
-                        <button className="bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-blue-700 transition-colors">
+                        <Link href={'/about'} className="bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-blue-700 transition-colors">
                             READ MORE →
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

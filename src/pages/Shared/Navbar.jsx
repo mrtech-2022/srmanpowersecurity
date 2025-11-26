@@ -57,8 +57,8 @@ const Navbar = () => {
                 </svg>
             )
         },
-        { href: "/about-us", label: "About Us" },
-        { href: "/our-services", label: "Our Services" },
+        { href: "/about", label: "About Us" },
+        { href: "/services", label: "Our Services" },
         { href: "/pricing", label: "Pricing" },
         { href: "/contacts", label: "Contact Us" }
     ];
@@ -210,7 +210,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[120px] lg:h-[136px]"></div>
+            <div className="h-[72px] lg:h-[136px]"></div>
         </div>
     )
 }
