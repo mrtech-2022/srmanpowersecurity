@@ -159,7 +159,7 @@ export default function OurClients() {
                     Client's Reference Letter
                 </h2>
 
-                <Marquee speed={50} gradient={false}>
+                <Marquee speed={50} gradient={false} pauseOnHover={true}>
                     {referenceLetters.map((letter) => (
                         <div
                             key={letter.id}

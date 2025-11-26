@@ -6,7 +6,7 @@ import leaderIImage from '../../../public/assets/images/chairman.jpg'
 import leaderIIImage from '../../../public/assets/images/md.jpg'
 
 const timeline = [
-  { year: '2024', title: 'Founded', text: 'SR Manpower & Security Services Ltd. began its journey in 2019 with a clear vision — to provide reliable manpower and professional security services that ensure safety, discipline, and operational excellence across Bangladesh.' },
+  { year: '2019', title: 'Founded', text: 'SR Manpower & Security Services Ltd. began its journey in 2019 with a clear vision — to provide reliable manpower and professional security services that ensure safety, discipline, and operational excellence across Bangladesh.' },
   { year: '2025', title: 'History', text: 'SR Manpower & Security Services Ltd. has grown into one of Bangladesh’s most trusted manpower outsourcing and security service providers. From its humble beginnings in Dhaka, the company has expanded nationwide, supplying skilled, semi-skilled, and unskilled workforce, as well as armed and unarmed security personnel to industrial projects, multinational companies, government institutions, and residential establishments. With a strong foundation built on discipline, integrity, and professionalism, SR Manpower & Security Services Ltd. ensures every team member is trained, police-verified, and supervised by experienced professionals from defense and law enforcement backgrounds. The company provides a wide range of services — including facility management, safety training, and emergency response solutions — designed to meet the evolving needs of its clients. Today, SR Manpower & Security Services Ltd. stands as a symbol of trust, reliability, and excellence, continuing to contribute to Bangladesh’s industrial development and workforce empowerment through world-class manpower and security solutions.' },
 ];
 
@@ -130,13 +130,13 @@ export default function AboutCompany() {
       <section className="relative h-124 flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden text-center px-6">
         <div className="absolute inset-0 bg-cover bg-center opacity-20 -z-10 transform-gpu filter blur-sm" />
         <div className="z-10 max-w-4xl">
-          <h1 className="text-5xl md:text-4xl font-bold tracking-tight mb-4 bg-clip-text text-transparent text-white">
+          <h1 className="text-2xl md:text-4xl font-bold tracking-tight mb-4 bg-clip-text text-transparent text-white">
             About Us <br /> Reliable. Disciplined. Trusted.
           </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
-            We provide professional manpower and security solutions across Bangladesh -- oferring trained, police-verified and skilled person to ensure safety, reliability and operational excellence.
+          <p className="text-white/80 text-sm md:text-xl max-w-2xl mx-auto">
+            We provide professional manpower and security solutions across Bangladesh -- offering trained, police-verified and skilled person to ensure safety, reliability and operational excellence.
           </p>
-          <div className="mt-8 flex items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
             <a className="px-6 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 text-white shadow-xl hover:scale-105 transition" href="#history">Our Journey</a>
             <a className="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-black transition" href="#team">Meet the Management & Team</a>
           </div>
@@ -153,8 +153,8 @@ export default function AboutCompany() {
                 key={t.year}
                 className="relative p-6 rounded-2xl bg-white border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-[1.02]"
               >
-                <div className="flex items-start gap-6">
-                  <div className="w-24 flex-shrink-0">
+                <div className="flex flex-col md:flex-row items-start gap-6">
+                  <div className="w-24 md:flex-shrink-0">
                     <div className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">{t.year}</div>
                     <div className="h-2 w-12 bg-indigo-500 rounded mt-3" />
                   </div>
