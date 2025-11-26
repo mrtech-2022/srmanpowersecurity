@@ -67,17 +67,20 @@ const Navbar = () => {
         <div>
             <header className={`bg-white backdrop-blur-sm fixed w-full top-0 z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'
                 }`}>
-                <div className="container max-w-7xl mx-auto px-4 py-3">
+                <div className="container max-w-7xl mx-auto px-2 py-3">
                     <div className="flex items-center justify-between">
                         <LogoWithText />
 
 
-                        <div className="hidden lg:flex items-center gap-6">
+                        <div className="hidden lg:flex items-center gap-8">
                             <div className="text-right">
-                                <div className="flex items-center gap-2 text-white">
+                                <div className="flex items-center gap-4 text-white">
                                     <Phone className="w-4 h-4 text-red-500" />
                                     <div>
-                                        <p className="text-xs text-gray-400">HOTLINE</p>
+                                        <p className="text-xs text-primary font-semibold">HOTLINE</p>
+                                        <p className="text-sm text-gray-400">Number</p>
+                                    </div>
+                                    <div>
                                         <p className="text-sm text-primary font-semibold">+880 1898-801560</p>
                                         <p className="text-sm text-primary font-semibold">+880 1898-801561</p>
                                     </div>
@@ -117,8 +120,8 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="bg-primary hidden lg:block">
-                    <div className="container mx-auto px-4">
+                <nav className="bg-primary max-w-[1250px] mx-auto px-5 hidden lg:block">
+                    <div className="container mx-auto px-2 ">
                         <ul className="flex items-center justify-center gap-1">
                             {navLinks.map((link, index) => (
                                 <li key={index}>
@@ -202,7 +205,7 @@ const Navbar = () => {
 
                     <div className="absolute bottom-4 left-4 right-4 text-center p-4 bg-gray-50 rounded-lg">
                         <Link href={'/contacts'} className="">
-                            <button className='text-xs bg-primary hover:bg-blue-700 text-white p-2 rounded-xl hover:cursor-pointer'> Free Consultation</button>
+                            <button className='text-xs bg-primary hover:bg-sky-400 text-white p-2 rounded-xl hover:cursor-pointer'> Free Consultation</button>
                         </Link>
                     </div>
                 </div>

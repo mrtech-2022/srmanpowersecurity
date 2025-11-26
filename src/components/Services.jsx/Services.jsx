@@ -91,7 +91,7 @@ export default function OurServices() {
     return (
         <div className="bg-white">
 
-            <div className="relative h-64 bg-gray-800 overflow-hidden">
+            <div className="relative h-124 bg-gray-800 overflow-hidden">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
@@ -101,7 +101,7 @@ export default function OurServices() {
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
                 </div>
                 <div className="relative h-full flex items-center justify-center">
-                    <h1 className="text-white text-4xl font-bold">Service Details</h1>
+                    <h1 className="text-white text-5xl font-bold">Service Details</h1>
                 </div>
             </div>
 

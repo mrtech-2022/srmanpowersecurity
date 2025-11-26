@@ -108,7 +108,7 @@ const Contacts = () => {
     return (
         <div className='bg-gray-50'>
 
-            <div className="relative h-64 bg-gray-800 overflow-hidden">
+            <div className="relative h-124 bg-gray-800 overflow-hidden">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
@@ -118,12 +118,12 @@ const Contacts = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
                 </div>
                 <div className="relative h-full flex items-center justify-center">
-                    <h1 className="text-white text-4xl font-bold">Contacts</h1>
+                    <h1 className="text-white text-5xl font-bold">Contacts Us</h1>
                 </div>
             </div>
 
             <div className='bg-gradient-to-br from-blue-100 to-gray-50 lg:w-1/2 mx-auto p-10 text-center m-10'>
-                <h1 className='text-xl lg:text-3xl font-bold'>Get In Touch With SR Manpower & Security Service Ltd.</h1>
+                <h1 className='text-xl lg:text-3xl font-bold'>Get In Touch With <br/> SR Manpower & Security Service Ltd.</h1>
                 <p>We're here to provide reliable security and manpower solutions. Contact us today.</p>
                 <div className='border text-xs md:text-base border-primary mt-2 mx-6'></div>
             </div>

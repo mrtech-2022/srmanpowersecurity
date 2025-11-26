@@ -127,10 +127,10 @@ export default function AboutCompany() {
   return (
     <div className="text-black bg-white">
 
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden text-center px-6">
+      <section className="relative h-124 flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden text-center px-6">
         <div className="absolute inset-0 bg-cover bg-center opacity-20 -z-10 transform-gpu filter blur-sm" />
         <div className="z-10 max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-mono- tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-pink-500">
+          <h1 className="text-5xl md:text-4xl font-bold tracking-tight mb-4 bg-clip-text text-transparent text-white">
             About Us <br /> Reliable. Disciplined. Trusted.
           </h1>
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">

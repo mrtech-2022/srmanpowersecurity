@@ -107,7 +107,7 @@ export default function Pricing() {
     return (
         <div className="bg-white ">
 
-            <div className="relative h-64 bg-gray-900 overflow-hidden">
+            <div className="relative h-124 bg-gray-900 overflow-hidden">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
@@ -118,7 +118,7 @@ export default function Pricing() {
                 </div>
                 <div className="relative h-full flex items-center text-center">
                     <div className="container mx-auto px-4">
-                        <h1 className="text-white text-5xl font-bold uppercase">Affordable Prices</h1>
+                        <h1 className="text-white text-5xl font-bold">Affordable Prices</h1>
                     </div>
                 </div>
             </div>
