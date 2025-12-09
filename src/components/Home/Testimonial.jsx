@@ -5,44 +5,44 @@ import Marquee from 'react-fast-marquee';
 export default function Testimonial() {
     const testimonials = [
         {
-            name: "Rajeev Singh",
-            role: "CEO",
+            name: "Chen Liming",
+            role: "Project Manager, China Railway since March 2024",
             avatar: "bg-yellow-400",
             icon: "👤",
-            text: "Overall, I was impressed with the team's work and attitude. Everyone was helpful, dedicated and hardworking to make put before them.",
-            rating: 5
+            text: "'Provided reliable 24/7 security since site control.",
+            rating: 4
         },
         {
-            name: "Amit Sharma",
-            role: "CEO",
+            name: "A. Rahman",
+            role: "Admin Manager, China Geo-Engineering lhina Geo-Engineering",
             avatar: "bg-blue-300",
             icon: "💼",
-            text: "We were very satisfied with the service. The squad has become part of the family. Everyone was extremely and calm great quality professionals.",
+            text: "Three-year contract fuillled for our professionaly d mofessinaly.",
             rating: 5
         },
         {
-            name: "Megha Gupta",
-            role: "CEO",
+            name: "Md. Karim",
+            role: "Corea Impex Trading",
             avatar: "bg-teal-600",
             icon: "🏆",
-            text: "Management and Squads were professional and caring. I definitely would recommend them close to anyone who has professional needs.",
+            text: "Flres enal security service for, pipe laying",
             rating: 5
         },
         {
-            name: "Priya Desai",
+            name: "Dr. Iqbal",
             role: "Manager",
             avatar: "bg-pink-400",
             icon: "👩",
-            text: "Exceptional service and dedication. The team went above and beyond to ensure our project was successful.",
-            rating: 5
+            text: "CMEC Project supply for our Engineering and vighiant.",
+            rating: 3
         },
         {
-            name: "Vikram Patel",
-            role: "Director",
+            name: "Fahad Hassan",
+            role: "Guoguo Food Co.",
             avatar: "bg-purple-500",
             icon: "🎯",
-            text: "Professional approach and excellent results. Highly recommended for anyone looking for quality work.",
-            rating: 5
+            text: "Ensures security for service for food producton inciulity facility..",
+            rating: 4
         }
     ];
 

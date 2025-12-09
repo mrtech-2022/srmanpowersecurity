@@ -79,7 +79,7 @@ export default function Footer() {
                             <li className="flex items-start gap-3 text-sm">
                                 <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                                 <span>House # 474, Road # 03, Solmaid, Dhali Bari,
-                                    Vatara, Gulshan, Dhaka-1212</span>
+                                    Gulshan, Vatara, Dhaka-1212</span>
                             </li>
                             <a href='tel:+8801898801560' className="flex items-start gap-3 text-sm">
                                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />

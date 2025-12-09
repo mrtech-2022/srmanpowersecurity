@@ -143,7 +143,7 @@ const Contacts = () => {
                                     Dhaka Head Office
                                 </h2>
                                 <p className="text-gray-500 text-sm mb-4">
-                                    House # 474, Road # 03, Solmaid, Dhali Bari, Vatara, Gulshan, Dhaka-1212
+                                    House # 474, Road # 03, Solmaid, Dhali Bari, Gulshan, Vatara, Dhaka-1212
                                 </p>
                                 <a href='tel:+8801711430179' className="text-xl md:text-3xl font-bold text-gray-900 mb-2">
                                     +880 1711-430179

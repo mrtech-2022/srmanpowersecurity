@@ -57,7 +57,7 @@ export default function SecurityServicesHero() {
                 <div className="relative h-full flex items-center mx-auto">
                     <div className="container mx-auto px-4">
                         <div className="text-center">
-                            <p className="text-white text-lg mb-4 font-semibold">YOUR SAFETY, OUR EFFORT</p>
+                            <p className="text-white text-lg mb-4 font-semibold">YOUR PROPERTY IS OUR RESPONSIBILITY</p>
                             <h2 className="text-white text-3xl md:text-6xl font-bold mb-8 leading-tight">
                                 BEST MANPOWER & SECURITY SERVICE
                             </h2>

@@ -52,6 +52,17 @@ import letter7 from '../../../public/assets/home/Reference_Letter/7.jpg';
 import letter8 from '../../../public/assets/home/Reference_Letter/8.jpg';
 import letter9 from '../../../public/assets/home/Reference_Letter/9.jpg';
 
+import letter_1 from '../../../public/assets/home/Reference_Letter/letter/1.jpg';
+import letter_2 from '../../../public/assets/home/Reference_Letter/letter/2.jpg';
+import letter_3 from '../../../public/assets/home/Reference_Letter/letter/3.jpg';
+import letter_4 from '../../../public/assets/home/Reference_Letter/letter/4.jpg';
+import letter_5 from '../../../public/assets/home/Reference_Letter/letter/5.jpg';
+import letter_6 from '../../../public/assets/home/Reference_Letter/letter/6.jpg';
+import letter_7 from '../../../public/assets/home/Reference_Letter/letter/7.jpg';
+import letter_8 from '../../../public/assets/home/Reference_Letter/letter/8.jpg';
+import letter_9 from '../../../public/assets/home/Reference_Letter/letter/9.jpg';
+
+
 export default function OurClients() {
     const clients = [
         { id: 1, name: 'Ashulia Elevated Expressway', logo: AshuliaElevatedExpressway, alt: 'Ashulia Elevated Expressway logo' },
@@ -101,7 +112,17 @@ export default function OurClients() {
         { id: 6, logo: letter6, alt: 'Reference Letter 6' },
         { id: 7, logo: letter7, alt: 'Reference Letter 7' },
         { id: 8, logo: letter8, alt: 'Reference Letter 8' },
-        { id: 9, logo: letter9, alt: 'Reference Letter 9' }
+        { id: 9, logo: letter9, alt: 'Reference Letter 9' },
+
+        { id: 9, logo: letter_1, alt: 'Reference Letter 1' },
+        { id: 9, logo: letter_2, alt: 'Reference Letter 2' },
+        { id: 9, logo: letter_3, alt: 'Reference Letter 3' },
+        { id: 9, logo: letter_4, alt: 'Reference Letter 4' },
+        { id: 9, logo: letter_5, alt: 'Reference Letter 5' },
+        { id: 9, logo: letter_6, alt: 'Reference Letter 6' },
+        { id: 9, logo: letter_7, alt: 'Reference Letter 7' },
+        { id: 9, logo: letter_8, alt: 'Reference Letter 8' },
+        { id: 9, logo: letter_9, alt: 'Reference Letter 9' },
     ];
 
     const halfIndex = Math.ceil(clients.length / 2);

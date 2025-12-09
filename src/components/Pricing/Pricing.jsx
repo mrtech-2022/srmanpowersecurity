@@ -1,249 +1,204 @@
-import React from 'react';
-import Link from 'next/link';
+'use client';
 
-export default function Pricing() {
-    const securityServices = [
-        {
-            title: 'Security Guard / Traffic',
-            subtitle: 'Male/Female, 8-Hour Shift',
-            price: '18,000',
-            period: 'Month',
-            features: [
-                '8 Hours Total Duty',
-                'Monthly Service (30 Days)',
-                'Leave Included',
-                'Retired Defense/Civil Personnel'
-            ],
-            color: 'blue'
-        },
-        {
-            title: 'Supervisor (Team Lead)',
-            subtitle: '8-Hour Leadership Shift',
-            price: '22,000',
-            period: 'Month',
-            features: [
-                'Team Management & Supervision',
-                'Monthly Service (30 Days)',
-                'Leave Included',
-                'Retired Defense/Civil Personnel'
-            ],
-            color: 'blue'
-        },
-        {
-            title: 'In-Charge (Senior Management)',
-            subtitle: 'Overseeing Responsibility',
-            price: '26,000',
-            period: 'Month',
-            features: [
-                'Site Management & Reporting',
-                'Full 1-Month Term',
-                'Leave Included',
-                'Retired Defense/Civil Personnel'
-            ],
-            color: 'blue'
-        },
-        {
-            title: 'Gun Man (Armed)',
-            subtitle: 'High-Level Armed Security',
-            price: '50,000',
-            period: 'Month',
-            features: [
-                'Specialized Protective Duties',
-                'Monthly Service (30 Days)',
-                'Leave Included',
-                'Retired Defense/Civil Personnel'
-            ],
-            color: 'red'
-        }
-    ];
+import React, { useState } from 'react';
+import { X, Aperture } from 'lucide-react';
 
-    const manpowerServices = [
-        { category: 'Cleaner', salary: 80, perDay: 640, monthly: '19,200', color: 'white' },
-        { category: 'General Worker', salary: 80, perDay: 640, monthly: '19,200', color: 'white' },
-        { category: 'Cook Helper', salary: 80, perDay: 640, monthly: '19,200', color: 'white' },
-        { category: 'Mason', salary: 100, perDay: 800, monthly: '24,000', color: 'yellow' },
-        { category: 'Steel Fixer', salary: 100, perDay: 800, monthly: '24,000', color: 'yellow' },
-        { category: 'Carpenter', salary: 100, perDay: 800, monthly: '24,000', color: 'yellow' },
-        { category: 'Pipe Fitter', salary: 100, perDay: 800, monthly: '24,000', color: 'yellow' },
-        { category: 'Welder', salary: 110, perDay: 880, monthly: '26,400', color: 'yellow' },
-        { category: 'Electrician', salary: 110, perDay: 880, monthly: '26,400', color: 'yellow' },
-        { category: 'Foreman', salary: 110, perDay: 880, monthly: '26,400', color: 'yellow' },
-        { category: 'Cook', salary: 150, perDay: 1200, monthly: '36,000', color: 'yellow' },
-        { category: 'Tractor Operator', salary: 90, perDay: 720, monthly: '21,600', color: 'green' },
-        { category: 'Car/Pick Up Driver', salary: 90, perDay: 720, monthly: '21,600', color: 'green' },
-        { category: 'Trailer Operator', salary: 90, perDay: 720, monthly: '21,600', color: 'green' },
-        { category: 'Forklift Operator', salary: 110, perDay: 880, monthly: '26,400', color: 'green' },
-        { category: 'Excavator Operator', salary: 125, perDay: 1000, monthly: '30,000', color: 'red' },
-        { category: 'Pay Loader Operator', salary: 125, perDay: 1000, monthly: '30,000', color: 'red' },
-        { category: 'Loader Operator', salary: 125, perDay: 1000, monthly: '30,000', color: 'red' },
-        { category: 'Bulldozer Operator', salary: 125, perDay: 1000, monthly: '30,000', color: 'red' },
-        { category: 'Mobile Crane Operator', salary: 160, perDay: 1280, monthly: '38,400', color: 'red' },
-        { category: 'Roller Operator', salary: 115, perDay: 920, monthly: '27,600', color: 'red' },
-        { category: 'Dumper Operator', salary: 115, perDay: 920, monthly: '27,600', color: 'red' },
-        { category: 'Grader Operator', salary: 115, perDay: 920, monthly: '27,600', color: 'red' },
-        { category: 'Mechanic/Repairman', salary: 125, perDay: 1000, monthly: '30,000', color: 'red' },
-        { category: 'Lathe Operator', salary: 125, perDay: 1000, monthly: '30,000', color: 'red' }
-    ];
+// Mock data for the gallery images, now including a 'category' field
+const mockImages = [
+    
+    // --- Meeting Section ---
+    { id: 1, url: "../../../assets/gallery/meeting/1.jpg", caption: "meeting 1", category: "Meeting" },
+    { id: 2, url: "../../../assets/gallery/meeting/2.jpg", caption: "meeting 2", category: "Meeting" },
+    { id: 3, url: "../../../assets/gallery/meeting/3.jpg", caption: "meeting 3", category: "Meeting" },
+    { id: 4, url: "../../../assets/gallery/meeting/4.jpg", caption: "meeting 4", category: "Meeting" },
+    { id: 5, url: "../../../assets/gallery/meeting/5.jpg", caption: "meeting 5", category: "Meeting" },
+    { id: 6, url: "../../../assets/gallery/meeting/6.jpg", caption: "meeting 6", category: "Meeting" },
+    { id: 7, url: "../../../assets/gallery/meeting/7.jpg", caption: "meeting 7", category: "Meeting" },
+    { id: 8, url: "../../../assets/gallery/meeting/8.jpg", caption: "meeting 8", category: "Meeting" },
+    { id: 9, url: "../../../assets/gallery/meeting/9.jpg", caption: "meeting 9", category: "Meeting" },
+    { id: 10, url: "../../../assets/gallery/meeting/10.jpg", caption: "meeting 10", category: "Meeting" },
 
-    const getRowColor = (color) => {
-        switch (color) {
-            case 'white': return 'bg-white';
-            case 'yellow': return 'bg-yellow-50';
-            case 'green': return 'bg-green-50';
-            case 'red': return 'bg-red-50';
-            default: return 'bg-white';
-        }
+    // --- Worker Section ---
+    { id: 11, url: "../../../assets/gallery/worker/1.jpg", caption: "Security Personnel 1", category: "Worker" },
+    { id: 12, url: "../../../assets/gallery/worker/2.jpg", caption: "Security Personnel 2", category: "Worker" },
+    { id: 13, url: "../../../assets/gallery/worker/3.jpg", caption: "Security Personnel 3", category: "Worker" },
+    { id: 14, url: "../../../assets/gallery/worker/4.jpg", caption: "Security Personnel 4", category: "Worker" },
+    { id: 15, url: "../../../assets/gallery/worker/5.jpg", caption: "Security Personnel 5", category: "Worker" },
+    { id: 16, url: "../../../assets/gallery/worker/6.jpg", caption: "Security Personnel 6", category: "Worker" },
+    { id: 17, url: "../../../assets/gallery/worker/7.jpg", caption: "Security Personnel 7", category: "Worker" },
+    { id: 18, url: "../../../assets/gallery/worker/8.jpg", caption: "Security Personnel 8", category: "Worker" },
+    { id: 19, url: "../../../assets/gallery/worker/9.jpg", caption: "Security Personnel 9", category: "Worker" },
+    { id: 20, url: "../../../assets/gallery/worker/10.jpg", caption: "Security Personnel 10", category: "Worker" },
+];
+
+// All available categories including 'All'
+const categories = ["All", "Meeting", "Worker"];
+
+// Helper function to map category key to display name
+const getCategoryDisplayName = (key) => {
+    switch (key) {
+        case "Meeting": return "Our Meetings";
+        case "Worker": return "Our Workers";
+        default: return "All";
+    }
+};
+
+
+// --- Modal Component for Full-Screen View ---
+const GalleryModal = ({ image, onClose }) => {
+    if (!image) return null;
+
+    return (
+        <div 
+            className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4 transition-opacity duration-300"
+            onClick={onClose}
+        >
+            <div 
+                className="relative bg-white rounded-xl shadow-2xl overflow-hidden max-w-5xl w-full max-h-[90vh] flex flex-col"
+                onClick={e => e.stopPropagation()}
+            >
+                {/* Close Button */}
+                <button
+                    onClick={onClose}
+                    className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white text-gray-800 hover:bg-gray-200 transition-colors shadow-lg"
+                    aria-label="Close Gallery"
+                >
+                    <X className="w-6 h-6" />
+                </button>
+
+                {/* Image Content */}
+                <div className="flex-grow overflow-hidden flex items-center justify-center">
+                    <img
+                        src={image.url}
+                        alt={image.caption}
+                        className="object-contain w-full h-full max-h-[70vh] rounded-t-xl"
+                        onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src = "https://placehold.co/800x600/AAAAAA/FFFFFF?text=Image+Load+Error";
+                        }}
+                    />
+                </div>
+
+                {/* Caption Footer */}
+                <div className="p-4 bg-gray-50 border-t border-gray-200">
+                    <p className="text-lg font-semibold text-gray-800">
+                        {image.caption}
+                    </p>
+                    <span className="text-sm text-gray-500 capitalize">
+                        Category: {getCategoryDisplayName(image.category)}
+                    </span>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+// --- Main App Component ---
+export default function App() {
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [activeCategory, setActiveCategory] = useState('All');
+
+    // Filter images based on the active category
+    const filteredImages = activeCategory === 'All'
+        ? mockImages
+        : mockImages.filter(image => image.category === activeCategory);
+
+    const handleCategoryClick = (category) => {
+        setActiveCategory(category);
     };
 
-    const getTextColor = (color) => {
-        switch (color) {
-            case 'yellow': return 'text-yellow-800';
-            case 'green': return 'text-green-700';
-            case 'red': return 'text-red-700';
-            default: return 'text-gray-700';
-        }
+    // Style the category buttons based on the provided image design
+    const CategoryButton = ({ categoryKey }) => {
+        const isActive = activeCategory === categoryKey;
+        const displayName = getCategoryDisplayName(categoryKey);
+
+        const activeClasses = 'bg-yellow-500 text-gray-900 shadow-md ring-4 ring-yellow-300/50';
+        const inactiveClasses = 'bg-gray-800 text-gray-200 hover:bg-gray-700 hover:text-white';
+
+        return (
+            <button
+                onClick={() => handleCategoryClick(categoryKey)}
+                className={`px-6 py-2 rounded-full font-semibold uppercase text-xs tracking-wider transition-all duration-200 ${isActive ? activeClasses : inactiveClasses}`}
+            >
+                {displayName}
+            </button>
+        );
     };
 
     return (
-        <div className="bg-white ">
-
-            <div className="relative h-124 bg-gray-900 overflow-hidden">
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{
-                        backgroundImage: 'url(/assets/images/pricing.jpg)',
-                    }}
-                >
-                    <div className="absolute inset-0 bg-black/60"></div>
+        <div className="min-h-screen bg-white font-sans text-gray-900">
+            {/* Hero Banner Section */}
+            <header 
+                className="relative h-96 bg-center flex items-center justify-center shadow-lg"
+                style={{
+                    backgroundImage: 'url(/assets/gallery/bg.jpg)',
+                    backgroundSize: 'cover',
+                }}
+            >
+                {/* Overlay for contrast */}
+                <div className="absolute inset-0 bg-black/50"></div>
+                
+                <div className="relative text-center z-10">
+                    <h1 className="text-white text-5xl font-bold">
+                        Our Gallery
+                    </h1>
                 </div>
-                <div className="relative h-full flex items-center text-center">
-                    <div className="container mx-auto px-4">
-                        <h1 className="text-white text-5xl font-bold">Affordable Prices</h1>
-                    </div>
-                </div>
-            </div>
+            </header>
 
-
-            <div className="max-w-7xl mx-auto px-4 py-16">
-                <div className="text-center mb-12">
-                    <div className="inline-block bg-yellow-200 px-6 py-2 rounded-full mb-4">
-                        <span className="text-yellow-800 font-semibold">Our Service Pricing</span>
-                    </div>
-                    <h2 className="text-5xl font-bold text-blue-900 mb-4">
-                        Choose the Most Suitable Package
-                    </h2>
-                    <p className="text-gray-600 text-lg">
-                        The detailed price list for our Security and Manpower Services is provided below.
-                    </p>
+            {/* Gallery Content and Filters */}
+            <main className="max-w-7xl mx-auto py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+                
+                {/* Filter Buttons */}
+                <div className="flex justify-center space-x-3 mb-12 -mt-10 z-20 relative">
+                    {categories.map(category => (
+                        <CategoryButton key={category} categoryKey={category} />
+                    ))}
                 </div>
 
-
-                <div className="mb-16">
-                    <h3 className="text-3xl font-bold text-blue-900 mb-8">1. Security Services (Monthly)</h3>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                        {securityServices.map((service, index) => (
+                {/* Image Grid */}
+                <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+                    {filteredImages.length > 0 ? (
+                        filteredImages.map((image) => (
                             <div
-                                key={index}
-                                className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:shadow-xl transition-shadow"
+                                key={image.id}
+                                className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer transform hover:scale-[1.02] transition duration-300 ease-in-out bg-gray-100"
+                                onClick={() => setSelectedImage(image)}
+                                tabIndex={0}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') {
+                                        setSelectedImage(image);
+                                    }
+                                }}
+                                role="button"
                             >
-                                <h4 className="text-xl font-bold text-gray-800 mb-1">{service.title}</h4>
-                                <p className="text-sm text-gray-500 mb-6">{service.subtitle}</p>
-
-                                <div className="text-center mb-6">
-                                    <div className="text-sm text-gray-500 mb-1">TK</div>
-                                    <div className={`text-5xl font-bold ${service.color === 'red' ? 'text-red-600' : 'text-blue-600'} mb-1`}>
-                                        {service.price}
-                                        <span className="text-2xl">,</span>
-                                    </div>
-                                    <div className="text-gray-500">{service.period}</div>
+                                {/* Image Thumbnail */}
+                                <img
+                                    src={image.url}
+                                    alt={image.caption}
+                                    className="w-full h-64 object-cover transition duration-300 group-hover:opacity-80"
+                                />
+                                
+                                {/* Overlay Caption on Hover */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                                    <p className="text-sm font-medium text-white line-clamp-2">
+                                        {image.caption}
+                                    </p>
                                 </div>
-
-                                <ul className="space-y-2">
-                                    {service.features.map((feature, idx) => (
-                                        <li key={idx} className="text-sm text-gray-600">
-                                            {feature}
-                                        </li>
-                                    ))}
-                                </ul>
                             </div>
-                        ))}
-                    </div>
-
-
-                    <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-8">
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                            <div>
-                                <h4 className="text-2xl font-bold text-blue-900 mb-2">
-                                    Looking for Your Own Quotation?
-                                </h4>
-                                <p className="text-gray-600">
-                                    Contact our expert team and get the best price for your specific needs.
-                                </p>
-                            </div>
-                            <Link href="/contacts" className="bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-600 transition-colors whitespace-nowrap hover:cursor-pointer">
-                                Contact for a Free Quotation
-                            </Link>
+                        ))
+                    ) : (
+                        <div className="col-span-full text-center py-16 text-gray-500">
+                            No images found in the {getCategoryDisplayName(activeCategory)} category.
                         </div>
-                    </div>
+                    )}
                 </div>
+            </main>
 
-
-                <div className="mb-8">
-                    <div className="bg-indigo-700 text-white p-6 rounded-t-lg">
-                        <h3 className="text-3xl font-bold mb-2">2. General Manpower Services (8 Hours/Day)</h3>
-                        <p className="text-indigo-200 text-sm">
-                            Manpower Provider Company Gets Service Commission From Party 'A' With 10% Commission
-                        </p>
-                    </div>
-
-                    <div className="overflow-x-auto">
-                        <table className="w-full border-collapse">
-                            <thead className="bg-indigo-700 text-white">
-                                <tr>
-                                    <th className="border border-indigo-600 px-6 py-4 text-left font-bold">CATEGORY</th>
-                                    <th className="border border-indigo-600 px-6 py-4 text-left font-bold">SALARY (TK/PER HOUR)</th>
-                                    <th className="border border-indigo-600 px-6 py-4 text-left font-bold">PER DAY (TK)</th>
-                                    <th className="border border-indigo-600 px-6 py-4 text-left font-bold">TOTAL MONTHLY TK</th>
-                                    <th className="border border-indigo-600 px-6 py-4 text-left font-bold">REMARKS</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {manpowerServices.map((service, index) => (
-                                    <tr key={index} className={getRowColor(service.color)}>
-                                        <td className={`border border-gray-300 px-6 py-4 font-semibold ${getTextColor(service.color)}`}>
-                                            {service.category}
-                                        </td>
-                                        <td className={`border border-gray-300 px-6 py-4 font-semibold ${getTextColor(service.color)}`}>
-                                            {service.salary}
-                                        </td>
-                                        <td className={`border border-gray-300 px-6 py-4 font-semibold ${getTextColor(service.color)}`}>
-                                            {service.perDay}
-                                        </td>
-                                        <td className={`border border-gray-300 px-6 py-4 font-semibold ${getTextColor(service.color)}`}>
-                                            {service.monthly}
-                                        </td>
-                                        <td className={`border border-gray-300 px-6 py-4 font-semibold ${getTextColor(service.color)}`}>
-
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div className="bg-indigo-800 text-white p-6 rounded-lg text-center">
-                    <p className="mb-2">
-                        <span className="text-yellow-400 font-bold">Important Notice:</span> A service commission of **10% is applicable** for all Manpower Services. Listed prices are initial quotations; the final rate will be determined through scope of work and **negotiation**.
-                    </p>
-                    <p className="text-sm">
-                        <span className="font-semibold">Hotline: +8801944474444</span>
-                        <span className="mx-4">|</span>
-                        <span className="font-semibold">Other: +8801944464444</span>
-                    </p>
-                </div>
-            </div>
+            {/* Image Modal */}
+            <GalleryModal
+                image={selectedImage}
+                onClose={() => setSelectedImage(null)}
+            />
         </div>
     );
 }
