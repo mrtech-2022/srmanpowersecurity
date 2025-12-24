@@ -34,7 +34,7 @@ export default function OurServices() {
                 'Mechanics, Welders, and Fabricators',
                 'Engineers (Civil, Electrical, Mechanical, QC, Quantity Surveyor (QS))',
                 'Administrative & Office Staff (Managers, Clerks, Computer Operators)',
-                'Safety Officers & Medical Personnel (Doctors, Nurses, Paramedics)'
+                'Safety Officers'
             ]
         },
         {

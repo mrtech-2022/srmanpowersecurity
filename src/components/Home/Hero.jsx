@@ -57,10 +57,11 @@ export default function SecurityServicesHero() {
                 <div className="relative h-full flex items-center mx-auto">
                     <div className="container mx-auto px-4">
                         <div className="text-center">
-                            <p className="text-white text-lg mb-4 font-semibold">YOUR PROPERTY IS OUR RESPONSIBILITY</p>
-                            <h2 className="text-white text-3xl md:text-6xl font-bold mb-8 leading-tight">
-                                BEST MANPOWER & SECURITY SERVICE
+                            
+                            <h2 className="text-white text-3xl md:text-6xl font-bold mb-4 leading-tight">
+                                SR MANPOWER & SECURITY SERVICE
                             </h2>
+                            <p className="text-white text-lg mb-4 font-semibold">YOUR PROPERTY IS OUR RESPONSIBILITY</p>
                             <button className="px-8 py-3 bg-primary text-white font-semibold hover:bg-blue-700 transition-colors">
                                 Learn More
                             </button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Youtube, Instagram } from 'lucide-react';
 import LogoWithText from './LogoWithText';
 import Link from 'next/link';
 
@@ -63,7 +63,7 @@ export default function Footer() {
                             </Link>
                             <Link href={'/pricing'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
-                                <span>Pricing</span>
+                                <span>Gallery</span>
                             </Link>
                             <Link href={'/contacts'} className="flex items-start gap-2 text-sm hover:text-blue-400 transition-colors cursor-pointer">
                                 <span className="text-blue-500 mt-1">›</span>
@@ -96,14 +96,14 @@ export default function Footer() {
                             <a href="https://www.facebook.com/srsecuritybd" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                                 <Facebook className="w-4 h-4 text-white" />
                             </a>
-                            <a href="#" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
+                            <a href="https://twitter.com/srsecuritybd" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
                                 <Twitter className="w-4 h-4 text-white" />
                             </a>
-                            <a href="#" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <a href="https://www.linkedin.com/srsecuritybd" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                                 <Linkedin className="w-4 h-4 text-white" />
                             </a>
-                            <a href="#" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
-                                <Youtube className="w-4 h-4 text-white" />
+                            <a href="https://www.instagram.com/srsecuritybd" className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                                <Instagram className="w-4 h-4 text-white" />
                             </a>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ export default function Footer() {
                     <div className="text-center text-sm text-gray-400">
                         © 2025, All Rights Reserved. Designed & Develop by{' '}
                         <a href='https://mrtech.com.bd/' target='_blank' className="text-blue-500 hover:text-blue-400 transition-colors cursor-pointer">
-                            MR Tech
+                            .\\
                         </a>
                     </div>
                 </div>

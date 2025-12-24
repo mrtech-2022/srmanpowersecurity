@@ -9,11 +9,11 @@ export default function Testimonial() {
             role: "Project Manager, China Railway since March 2024",
             avatar: "bg-yellow-400",
             icon: "👤",
-            text: "'Provided reliable 24/7 security since site control.",
+            text: "Provided reliable 24/7 security since site control.",
             rating: 4
         },
         {
-            name: "A. Rahman",
+            name: "Mr.lan",
             role: "Admin Manager, China Geo-Engineering lhina Geo-Engineering",
             avatar: "bg-blue-300",
             icon: "💼",
@@ -21,7 +21,7 @@ export default function Testimonial() {
             rating: 5
         },
         {
-            name: "Md. Karim",
+            name: "Nila",
             role: "Corea Impex Trading",
             avatar: "bg-teal-600",
             icon: "🏆",
@@ -29,7 +29,7 @@ export default function Testimonial() {
             rating: 5
         },
         {
-            name: "Dr. Iqbal",
+            name: " Mr. chen",
             role: "Manager",
             avatar: "bg-pink-400",
             icon: "👩",
@@ -37,13 +37,46 @@ export default function Testimonial() {
             rating: 3
         },
         {
-            name: "Fahad Hassan",
-            role: "Guoguo Food Co.",
-            avatar: "bg-purple-500",
-            icon: "🎯",
-            text: "Ensures security for service for food producton inciulity facility..",
+            name: " Mr. mew",
+            role: "(CRBG) China Railway Construction Bridge Engineering Bureau Group Co. Ltd.",
+            avatar: "bg-pink-400",
+            icon: "👩",
+            text: "",
+            rating: 4
+        },
+        {
+            name: " Mr. Than",
+            role: "CREC – Padma Bridge Rail Link Project",
+            avatar: "bg-pink-400",
+            icon: "👩",
+            text: "",
+            rating: 3
+        },
+        {
+            name: "Mr. Dang",
+            role: "Jv of Zhongnan Engineering Corporation Limited and Sinohydro Corporation Limited",
+            avatar: "bg-pink-400",
+            icon: "👩",
+            text: "",
+            rating: 5
+        },
+        {
+            name: "Mr.  ju",
+            role: "Project manager",
+            avatar: "bg-pink-400",
+            icon: "👩",
+            text: "China Construction Seventh Engineering Division Corp. Ltd",
+            rating: 3
+        },
+        {
+            name: "Mr. Ma",
+            role: "Huitong International Construction & Installation Engineering",
+            avatar: "bg-pink-400",
+            icon: "👩",
+            text: "",
             rating: 4
         }
+
     ];
 
     return (

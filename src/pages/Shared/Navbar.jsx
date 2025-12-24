@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react'
-import { Facebook, Linkedin, Youtube, Phone, Menu, X } from 'lucide-react';
+import { Facebook, Linkedin, Youtube, Phone, Menu, X, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import LogoWithText from './LogoWithText';
 
@@ -92,11 +92,11 @@ const Navbar = () => {
                                 <a href="https://www.facebook.com/srsecuritybd" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition">
                                     <Facebook className="w-4 h-4 text-white" />
                                 </a>
-                                <a href="#" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-800 transition">
+                                <a href="https://www.linkedin.com/srsecuritybd" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-800 transition">
                                     <Linkedin className="w-4 h-4 text-white" />
                                 </a>
-                                <a href="#" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition">
-                                    <Youtube className="w-4 h-4 text-white" />
+                                <a href="https://www.instagram.com/srsecuritybd" className="w-9 h-9 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                    <Instagram className="w-4 h-4 text-white" />
                                 </a>
                                 <a href="tel:+8801898801561" className="w-9 h-9 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition">
                                     <Phone className="w-4 h-4 text-white" />

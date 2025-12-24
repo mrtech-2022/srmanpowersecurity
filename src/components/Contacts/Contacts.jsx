@@ -77,7 +77,7 @@ const Contacts = () => {
             location: "Gazipur City",
             address: "Holding 1062, Barabari Gacha Road, Kali Gachatala, Gazipur",
             phone: "+880 1898-801566",
-            email: "info.gazipur@srsecuritybd.com"
+            email: "info@srsecuritybd.com"
         },
         {
             icon: MapPin,
@@ -85,7 +85,7 @@ const Contacts = () => {
             location: "Sirajganj City",
             address: "House: 11/A, Golakpur, Hatikumrul, Ullapara, Sirajganj",
             phone: "+880 1898-801564",
-            email: "info.sirajganj@srsecuritybd.com"
+            email: "info@srsecuritybd.com"
         },
         {
             icon: Building,
@@ -93,15 +93,15 @@ const Contacts = () => {
             location: "Chattogram City",
             address: "209/B, Rangipara, Bank Colony, North Agrabad, Chittagong",
             phone: "+880 1898-801569",
-            email: "info.chattogram@srsecuritybd.com"
+            email: "info@srsecuritybd.com"
         },
         {
             icon: Building,
             name: "Nilphamari Office",
             location: "Nilphamari City",
             address: "Holding: 1905, Ward No. 7, Hospital Road, Jummapara, Nilphamari",
-            phone: "+880 1898-801568",
-            email: "info.nilphamari@srsecuritybd.com"
+            phone: "+880 1898-801562",
+            email: "info@srsecuritybd.com"
         }
     ];
 
@@ -212,7 +212,7 @@ const Contacts = () => {
 
                             <div className="bg-white rounded-xl shadow-lg overflow-hidden h-[400px] lg:h-full">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58398.86341087786!2d90.36311469999999!3d23.8103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70c15ea1de1%3A0x97856381e88ac842!2sDhaka!5e0!3m2!1sen!2sbd!4v1234567890"
+                                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d228.1474812450731!2d90.43081906439953!3d23.805804993723196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDQ4JzIxLjAiTiA5MMKwMjUnNTEuMyJF!5e0!3m2!1sen!2sbd!4v1766520612053!5m2!1sen!2sbd"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
@@ -228,8 +228,7 @@ const Contacts = () => {
                                         Send A Message
                                     </h2>
                                     <p className="text-gray-500 text-sm">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                                        eiusmod tempor incididunt labore dolore.
+                                        
                                     </p>
                                 </div>
 
