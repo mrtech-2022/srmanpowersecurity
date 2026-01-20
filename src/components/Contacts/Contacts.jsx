@@ -149,7 +149,7 @@ const Contacts = () => {
                                     +880 1711-430179
                                 </a>
                                 <p className="text-gray-500 text-sm mb-2">
-                                    +880 1898-801560, +880 1985-801481
+                                    +880 1898-801560, +880 1718-845776
                                 </p>
                                 <a href="mailto:info@srsecuritybd.com" className="text-blue-600 hover:text-blue-700 text-sm">
                                     info@srsecuritybd.com
